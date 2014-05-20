@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu name="党员管理" permission="partyMemberManager" icon="/themes/default/css/images/news/i15.png">
+       <menu name="在职党员管理" permission="workingPartyMemberManager" link="/jsp/component/basis/partymenber/workingList.jsp"/>
+       <menu name="流动党员管理" permission="flowPartyMemberManager" link="/jsp/component/basis/partymenber/flowList.jsp"/>
+       <menu name="历史党员管理" permission="historyPartyMemberManager" link="/jsp/component/basis/partymenber/historyList.jsp"/>
+    </menu>
+    
+	<menu name="党员发展" permission="partyDevelopmentMemberManager" icon="/themes/default/css/images/news/i14.png">
+        <menu name="党员发展" permission="partyDevelopmentManager" link="/jsp/component/basis/partydevelopment/list.jsp" />
+        <menu name="思想汇报" permission="ideologyManager" link="/jsp/component/partywork/sxhb/list.jsp"/>
+    </menu>
+</menus>

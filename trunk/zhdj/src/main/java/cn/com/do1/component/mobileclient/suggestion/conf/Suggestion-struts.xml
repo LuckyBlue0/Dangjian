@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="mobileclient.suggestion" namespace="/suggestion" extends="dqdp-default">
+        <action name="suggestionAction" class="cn.com.do1.component.mobileclient.suggestion.ui.SuggestionAction">
+        </action>
+    	</package>
+        <package name="mobileclient.suggestion.interface" namespace="/interface/suggestion" extends="dqdp-default">
+        <action name="suggestion" class="cn.com.do1.component.mobileclient.suggestion.client.SuggestionInterfaceAction">
+        </action>
+    	</package>
+</struts>

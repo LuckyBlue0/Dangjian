@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <title></title>
+    <link href="../../themes/3rd-plug/easy-ui/icon.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../js/3rd-plug/jquery/jquery.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[type=button]").click(function () {
+            var fieldList = $("form [fieldType]");
+            $.each(fieldList, function (index, content) {
+                var type = $(content).attr("fieldType");
+                var value = $(content).val();
+                var name = $(content).attr("name");
+                var type = ($(this).parent().find("[name=searchType." + name + "]"));
+                alert($(this).parent().append("<input type='text'>"));
+                alert(type + "|" + value);
+            });
+        });
+    });
+</script>
+<body>
+<div id="search">
+    <form action="/dqdp/demomodel/demomodel!ajaxSearch.action" method="GET">
+        <!--<input type="text" name="searchMap('test_Name')" value="testName_value">-->
+        <!--<input type="hidden" name="searchMap('test_Time')" value="2011-10-10 11:00:00">-->
+        <!--<input type="hidden" name="searchMap('test_Count')" value="11">-->
+        <input type="hidden" name="ids" value="id1">
+        <input type="text" name="searchValue.account" fieldType="string" value="admin">
+        <input type="hidden" name="searchValue.LASTSIGNIN" fieldType="date@yyyy-MM-dd" value="2012-02-22 00:00:00">
+        <input type="hidden" name="searchValue.STATUS" fieldType="number" value="1">
+        <input type="submit" name="dd" value="查询">
+        <input type="button" name="dd1" value="按钮">
+
+    </form>
+</div>
+<table id="data_list">
+    <tr>
+        <td></td>
+        <td>name1</td>
+        <td style="">name2</td>
+        <td colFormat="" colStyle="">name3</td>
+        <td>name4</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>vale1</td>
+        <td>value2</td>
+        <td>value3</td>
+        <td>value4</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>vale1</td>
+        <td>value2</td>
+        <td>value3</td>
+        <td>value4</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>vale1</td>
+        <td>value2</td>
+        <td>value3</td>
+        <td>value4</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>vale1</td>
+        <td>value2</td>
+        <td>value3</td>
+        <td>value4</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="photowall.photowall" namespace="/photowall" extends="dqdp-default">
+        <action name="photowallAction" class="cn.com.do1.component.photowall.photowall.ui.PhotowallAction">
+            <result name="view">/jsp/component/photowall/view.jsp</result>
+        </action>
+    </package>
+    
+    <package name="photowall.photowall.interface" namespace="/interface/photowall" extends="dqdp-default">
+        <action name="photowallAction" class="cn.com.do1.component.photowall.photowall.client.PhotowallInterfaceAction">
+        </action>
+    </package>
+</struts>

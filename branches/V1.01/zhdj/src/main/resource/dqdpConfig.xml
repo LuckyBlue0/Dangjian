@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dpdq-config platformId=""> 
+  <commpants> 
+    <commpant name="index" enabled="true" lastVer="1.0"/>  
+    <commpant name="systemmgr" enabled="true" lastVer="1.0"/>  
+    <commpant name="basis" enabled="true" lastVer="1.0"/>  
+    <commpant name="news" enabled="true" lastVer="1.0"/>  
+    <commpant name="vote" enabled="true" lastVer="1.0"/>  
+    <commpant name="relation" enabled="true" lastVer="1.0"/>  
+    <commpant name="score" enabled="true" lastVer="1.0"/>  
+    <commpant name="data" enabled="true" lastVer="1.0"/>  
+    <commpant name="dqdploger" enabled="true" lastVer="1.0"/>  
+    <commpant name="partywork" enabled="true" lastVer="1.0"/>  
+    <commpant name="pushnotification" enabled="true" lastVer="1.0"/>  
+    <commpant name="shyk" enabled="true" lastVer="1.0"/>  
+    <commpant name="schedule" enabled="true" lastVer="1.0"/>  
+    <commpant name="dqdpdictionary" enabled="true" lastVer="1.0"/>  
+    <commpant name="leader" enabled="true" lastVer="1.0"/>  
+    <commpant name="report" enabled="true" lastVer="1.0"/>  
+    <commpant name="mobileclient" enabled="true" lastVer="1.0"/>  
+    <commpant name="user" enabled="true" lastVer="1.0"/>  
+    <commpant name="indexmanager" enabled="true" lastVer="1.0"/>  
+    <commpant name="share" enabled="true" lastVer="1.0"/>
+    <commpant name="photowall" enabled="true" lastVer="1.0"/>
+     <commpant name="post" enabled="true" lastVer="1.0"/>
+     <commpant name="team" enabled="true" lastVer="1.0"/>
+  </commpants> 
+</dpdq-config>

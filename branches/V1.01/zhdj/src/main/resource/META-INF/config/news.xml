@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuList>
+	<menu>
+		<title>新闻公告</title>
+        <orderValue>1</orderValue>
+        <imgPath>images/aqnews/001.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/news/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+	<menu> 
+		<title>组工动态</title>
+        <orderValue>2</orderValue>
+        <imgPath>images/aqnews/002.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/zugongdongtai/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+	<menu>
+		<title>阳光部务</title>
+        <orderValue>3</orderValue>
+        <imgPath>images/aqnews/003.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/yangguangbuwu/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+	<menu>
+		<title>专题中心</title>
+        <orderValue>4</orderValue>
+        <imgPath>images/aqnews/004.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/zhuantizhongxin/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+	<menu>
+		<title>阵地园地</title>
+        <orderValue>5</orderValue>
+        <imgPath>images/aqnews/005.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/zhendiyuandi/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+	<menu>
+		<title>掌上期刊</title>
+        <orderValue>6</orderValue>
+        <imgPath>images/aqnews/006.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/tianhedangjian/zsqikan/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+    <!-- 
+	<menu>
+		<title>空中课堂</title>
+        <orderValue>7</orderValue>
+        <imgPath>images/aqnews/007.png</imgPath>
+        <getContentUrl>http://192.168.1.50:8200/kongzhongketang/news/list.mobo?iswap=1&amp;cmd=request</getContentUrl>
+    </menu>
+     -->
+</menuList>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="party_meeting_todo">三会一课</string>
+    <string name="branch_activity_todo">支部活动</string>
+    <string name="vol_activity_todo">志愿活动</string>
+    <string name="party_care_todo">党内关爱</string>
+</resources>

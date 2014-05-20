@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/notice_item_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收件人" />
+
+            <TextView
+                android:id="@+id/editText1"
+                style="@style/notice_title_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingRight="10dp"
+                android:text="安庆" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发件人" />
+
+            <TextView
+                android:id="@+id/editText1"
+                style="@style/notice_title_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingRight="10dp"
+                android:text="郭文兵" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/notice_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="主题" />
+
+            <TextView
+                android:id="@+id/editText1"
+                style="@style/notice_title_gray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingRight="10dp"
+                android:text="关于2013年市委秋季班次调整" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/notice_item_bg"
+            android:gravity="top"
+            android:hint="请输入反馈意见"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/youjian_fujian"
+        android:text="关于申报2013年秋季学期市委组织部调训班次参训计划的函.doc(54.0K)"
+        android:textColor="#8d8d8d" />
+
+</LinearLayout>

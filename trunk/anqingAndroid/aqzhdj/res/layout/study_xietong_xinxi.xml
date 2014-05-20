@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/one1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/notice_item_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/notice_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="20dp"
+                    android:text="【政务状态】张君毅到家禽批发市场检查人感H7N9禽流感防控工作" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/author"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安庆区委管理员" />
+
+                    <TextView
+                        android:id="@+id/sendTime"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2013-10-10" />
+
+                    <TextView
+                        android:id="@+id/digest"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pic"
+                        android:layout_marginTop="10dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/digest"
+                        android:layout_marginTop="10dp"
+                        android:background="#dbdbdb" />
+
+                    <TextView
+                        android:id="@+id/quanwen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/arrow"
+                        android:text="查看全文"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/one2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/notice_item_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/notice_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="20dp"
+                    android:text="【政务状态】张君毅到家禽批发市场检查人感H7N9禽流感防控工作" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/author"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安庆区委管理员" />
+
+                    <TextView
+                        android:id="@+id/sendTime"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2013-10-10" />
+
+                    <TextView
+                        android:id="@+id/digest"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pic"
+                        android:layout_marginTop="10dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/digest"
+                        android:layout_marginTop="10dp"
+                        android:background="#dbdbdb" />
+
+                    <TextView
+                        android:id="@+id/quanwen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/arrow"
+                        android:text="查看全文"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/one3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/notice_item_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/notice_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="20dp"
+                    android:text="【政务状态】张君毅到家禽批发市场检查人感H7N9禽流感防控工作" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/author"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安庆区委管理员" />
+
+                    <TextView
+                        android:id="@+id/sendTime"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2013-10-10" />
+
+                    <TextView
+                        android:id="@+id/digest"
+                        style="@style/notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pic"
+                        android:layout_marginTop="10dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/digest"
+                        android:layout_marginTop="10dp"
+                        android:background="#dbdbdb" />
+
+                    <TextView
+                        android:id="@+id/quanwen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/arrow"
+                        android:text="查看全文"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

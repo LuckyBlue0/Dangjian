@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/list_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/button_bottom"
+        android:listSelector="@drawable/listview_selector"
+         />
+
+    <TextView
+        android:id="@+id/nullText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/headLayout"
+        android:gravity="center"
+        android:text="暂无数据" >
+    </TextView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/button_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_daiban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/repeat_button"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_daiban"
+                style="@style/mine_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:text="我的待办" />
+
+            <ImageView
+                android:id="@+id/jiantoupic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/buttonjiantou" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bottom_line1" />
+
+        <LinearLayout
+            android:id="@+id/layout_yiban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/repeat_button" >
+
+            <Button
+                android:id="@+id/bt_yiban"
+                style="@style/mine_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:text="我的已办" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

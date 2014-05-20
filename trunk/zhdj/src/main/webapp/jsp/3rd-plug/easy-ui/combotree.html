@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery EasyUI</title>
+	<link rel="stylesheet" type="text/css" href="../../../themes/3rd-plug/easy-ui/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../../themes/3rd-plug/easy-ui/icon.css">
+	<script type="text/javascript" src="../../../js/3rd-plug/jquery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../../../js/3rd-plug/ease-ui/easyui.min.js"></script>
+	<script>
+		function reload(){
+			$('#cc').combotree('reload');
+		}
+		function setValue(){
+			$('#cc').combotree('setValue',{
+				id:2,
+				text:'File1'
+			});
+		}
+		function getValue(){
+			var val = $('#cc').combotree('getValue');
+			alert(val);
+		}
+	</script>
+</head>
+<body>
+	<h1>ComboTree</h1>
+	<div style="margin-bottom:10px;">
+		<a href="#" onclick="reload()">reload</a>
+		<a href="#" onclick="setValue()">setValue</a>
+		<a href="#" onclick="getValue()">getValue</a>
+	</div>
+	<span>Select:</span>
+	<select id="cc" class="easyui-combotree" url="tree_data.json" style="width:200px;"></select>
+</body>
+</html>

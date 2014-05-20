@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="vote.orgvote" namespace="/orgvote" extends="dqdp-default">
+        <action name="orgvoteAction" class="cn.com.do1.component.vote.orgvote.ui.OrgvoteAction">
+        	<result name="edit">/jsp/component/vote/orgVote/orgVoteEdit.jsp</result>
+        	<result name="view">/jsp/component/vote/orgVote/orgVoteView.jsp</result>
+        </action>
+    </package>
+    <package name="mobileclient.orgvote.interface" namespace="/interface/orgvote" extends="dqdp-default">
+        <action name="orgvoteInterfaceAction" class="cn.com.do1.component.vote.orgvote.client.OrgvoteInterfaceAction">
+        </action>
+        </package>
+</struts>

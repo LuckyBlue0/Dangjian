@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_head"
+        layout="@layout/circle_head" />
+
+    <include
+        android:id="@+id/include_midle"
+        layout="@layout/circle_midle_switch" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/body_bg"
+        android:orientation="vertical" >
+
+        <cn.com.do1.dqdp.android.component.PageListView
+            android:id="@+id/listView_circle"
+            style="@style/list_view_style"
+            clickAble="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <cn.com.do1.dqdp.android.component.PageListView
+            android:id="@+id/listView_activity"
+            style="@style/list_view_style"
+            clickAble="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_join"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/body_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_join"
+            android:layout_centerInParent="true"
+            android:text="您还没有圈子，赶紧搜索加入吧" />
+
+        <Button
+            android:id="@+id/button_join"
+            style="@style/big_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bt_login"
+            android:text="加入圈子" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="学习教育" permission="">
+        <menu name="视频文件" link="/jsp/component/data/videoFile/videoFileList.jsp" permission="videoFileManage"/>
+        <menu name="党务文件" link="/jsp/component/data/partyFile/partyFileList.jsp" permission="partyFileManage"/>
+        <menu name="资料文件" link="/jsp/component/data/dataFile/dataFileList.jsp" permission="dataFileManage"/>
+        <menu name="礼仪歌曲" link="/jsp/component/data/musicFile/musicFileList.jsp" permission="musicFileManage"/>
+    </menu>
+</menus>

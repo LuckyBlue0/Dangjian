@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+   <perm code="indexshowManager" name="首页信息管理" model="首页管理"/>
+    <perm code="indexshowSearch" name="首页信息查询" model="首页管理"/>
+    <perm code="indexshowView" name="首页信息详情" model="首页管理"/>
+    <perm code="indexshowAdd" name="首页信息新增" model="首页管理"/>
+    <perm code="indexshowEdit" name="首页信息修改" model="首页管理"/>
+    <perm code="indexshowDel" name="首页信息删除" model="首页管理"/>
+</permissions>

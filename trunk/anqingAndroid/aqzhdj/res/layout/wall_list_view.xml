@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/jifenpaiming_bg1"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/comm_bg"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/sendBtn"
+            style="@style/mine_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_issue"
+            android:gravity="center"
+            android:text="发布" />
+
+        <EditText
+            android:id="@+id/say"
+            android:layout_toLeftOf="@id/sendBtn"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comm_edittext"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="说些什么吧"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <!-- <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottomLayout"
+        android:layout_below="@id/headLayout"
+        layout="@layout/list_view" /> -->
+    
+     <ListView
+        android:id="@+id/listview"
+        android:layout_below="@id/headLayout"
+        style="@style/list_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/listview_selector"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="留影墙管理" permission="photowallList"> 
+        <menu name="留影墙" link="/jsp/component/photowall/list.jsp" permission="photowallList"/>
+    </menu> 
+</menus>

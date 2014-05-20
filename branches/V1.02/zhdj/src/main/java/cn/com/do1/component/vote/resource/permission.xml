@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="voteManage" name="投票管理" model="投票管理"/>
+    <perm code="orgVoteManage" name="民主机关评议" model="投票管理"/>
+    <perm code="orgVoteAdd" name="民主机关评议新增" model="投票管理"/>
+    <perm code="orgVoteEdit" name="民主机关评议修改" model="投票管理"/>
+    <perm code="orgVoteDel" name="民主机关评议删除" model="投票管理"/>
+    <perm code="orgVotePushOrOut" name="民主机关发布或下架" model="投票管理"/>
+    <perm code="partymemberVoteManage" name="优秀党员评议" model="投票管理"/>
+    <perm code="partymemberVoteAdd" name="优秀党员评议新增" model="投票管理"/>
+    <perm code="partymemberVoteEdit" name="优秀党员评议修改" model="投票管理"/>
+    <perm code="partymemberVoteDel" name="优秀党员评议删除" model="投票管理"/>
+    <perm code="partymemberVotePushOrOut" name="优秀党员评议发布或下架" model="投票管理"/>
+</permissions>

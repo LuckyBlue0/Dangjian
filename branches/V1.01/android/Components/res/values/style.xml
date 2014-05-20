@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="PageIndicator">
+		<item name="dotDrawable">@drawable/gd_page_indicator_dot</item>
+	</style>
+    
+</resources>

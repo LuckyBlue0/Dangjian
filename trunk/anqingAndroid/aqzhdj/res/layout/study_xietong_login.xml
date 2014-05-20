@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <ImageView
+        android:id="@+id/headimag_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headLayout"
+        android:scaleType="fitXY"
+        android:src="@drawable/xietong_login_background" />
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_login_name"
+            android:hint="请输入用户名"
+            android:paddingLeft="60dp"
+            android:text="郭文兵" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_login_pwd"
+            android:hint="请输入密码"
+            android:paddingLeft="60dp"
+            android:password="true"
+            android:singleLine="true"
+            android:text="gwb5346537" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_submit_red"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

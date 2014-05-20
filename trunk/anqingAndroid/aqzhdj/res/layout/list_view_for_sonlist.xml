@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLayout"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btn1"
+                        style="@style/notice_content3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_on"
+                        android:text="button1" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        style="@style/notice_content3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg"
+                        android:text="button2" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        style="@style/notice_content3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg"
+                        android:text="button3" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        style="@style/notice_content3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg"
+                        android:text="button4" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        style="@style/notice_content3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg"
+                        android:text="button5" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/headLayout"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

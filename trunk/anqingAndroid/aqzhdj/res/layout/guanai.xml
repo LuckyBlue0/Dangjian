@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/guanai_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_typetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/guanai_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="待办类型 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/guanai_title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_typetxt"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/mytodo_meetingtime" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_below="@+id/mytodo_organiser" -->
+                <!-- android:layout_marginLeft="5dp" -->
+                <!-- android:layout_marginTop="2dp" -->
+                <!-- android:layout_toRightOf="@+id/mytodo_meetingtimetxt" -->
+                <!-- android:text="2013-03-30" -->
+                <!-- android:textColor="#8d8d8d" -->
+                <!-- android:textSize="15sp" /> -->
+
+                <TextView
+                    android:id="@+id/mytodo_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_type"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/mytodo_meetingtimetxt"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mytodo_starttime"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/branch_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/mytodo_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="求助信息"
+                    android:textColor="#4c4c4c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助人 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_people_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_people"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_people"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助类型 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_type_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_people_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_type"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_type"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助名称 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_money_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_type_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_money"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_money"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助数量 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_count_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_money_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_count"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_count"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助有效期："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_time_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_count_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_time"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="求助描述："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_qiuzhu_detail_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_qiuzhu_time_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_qiuzhu_detail"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mytodo_starttime"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/branch_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/mytodo_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="捐助信息"
+                    android:textColor="#4c4c4c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助人 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_people_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_people"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_people"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助类型 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_type_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_people_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_type"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_type"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助名称 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_money_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_type_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_money"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_money"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助数量 ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_count_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_money_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_count"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_count"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助有效期："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_time_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_count_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_time"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="捐助描述："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_juanzhu_detail_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_juanzhu_time_c"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/mytodo_juanzhu_detail"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mytodo_join"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="我知道了"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

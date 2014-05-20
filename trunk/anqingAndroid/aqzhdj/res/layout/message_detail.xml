@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modelListLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_send"
+            android:gravity="center"
+            android:text="留  言"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/send_name"
+                    style="@style/mine_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/send_time"
+                    android:textColor="#8d8d8d"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="3dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/xbox_line" />
+
+            <TextView
+                android:id="@+id/send_content"
+                style="@style/mine_style2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_bottom" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/replyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_reply"
+            android:gravity="center"
+            android:text="回  复"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/reply_name"
+                    style="@style/mine_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/reply_time"
+                    android:textColor="#8d8d8d"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="3dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/xbox_line" />
+
+            <TextView
+                android:id="@+id/reply_content"
+                style="@style/mine_style2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xbox_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

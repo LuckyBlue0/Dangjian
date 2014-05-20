@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="democreater.democ1" namespace="/democ1" extends="dqdp-default">
+        <action name="democ1" class="cn.com.do1.component.democreater.democ1.ui.Democ1Action">
+            <result name="edit"/>
+            <result name="list"/>
+        </action>
+    </package>
+</struts>

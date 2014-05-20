@@ -1,0 +1,366 @@
+/*
+-------------------------------
+Site:        道一后台UI规范 公用样式
+Author:      许妙云
+Updated:     2011-01-25
+Updated by:
+-------------------------------
+*/
+@import url(base.css);
+
+/*=========头部========*/
+.head{width:100%; height:60px; background:url(images/headBg.png) repeat-x;}
+.headLeft{height:60px; padding:0 0 0 20px; }
+.headRight{vertical-align:top;}
+.loginmsg{ padding:10px 30px 0 0; float:right; text-align:right; color:#fff; font-weight:bold;}
+.loginmsg a{margin:0 5px; color:#fff;}
+.loginmsg a.exit{color:#ffeb43;}
+.state{height:22px; padding:0 15px; clear:both; position:absolute; z-index:999; top:40px; background:#f5ffcb; text-align:left; line-height:22px;}
+.state a{margin:0 5px; color:#dc4b3c;}
+/*========头部 end=======*/
+
+/*========主体部分=======*/
+.left{width:190px;}
+.right{width:auto; padding:5px 5px 5px 0;background: url(images/body.png) no-repeat center top #eee;}
+.showLeft{width:5px;}
+.containers{padding:5px 5px 5px 10px; }
+.shrink a{width:6px; height:50px; display:block; overflow:hidden; background:url(images/hide.png) no-repeat 0 0px; position: absolute;top: 50%;margin-top: -25px;}
+.shrink a.expand{background-position:-10px 300px;}
+/*========主体部分 end=======*/
+
+/*========底部=======*/
+.footer{width:100%; height:23px; overflow:hidden; background:url(images/footer.gif);}
+.footer .copyRight{width:300px;  margin:1px auto; text-align:center;}
+/*========底部=========*/
+
+/*========菜单=======*/
+/*.menu{width:150px; margin:10px 6px 10px 10px; overflow:hidden;}*/
+.menu ul li{padding:4px 0 0 10px;  background:url(images/bar.png) repeat-x;border: 1px solid #e0e0e0; position: relative;}
+.menu ul li  li{border: 0;background: none;}
+.menu ul li img{margin:0 0 -3px;}
+.menu ul li a{padding:0 0 0 3px; line-height:23px;display: inline-block;vertical-align: middle;}
+.menu ul li ul {margin-left: -10px;}
+/*.menu ul li ul li{_width:120px; margin:0; padding:0 0 0 14px;  background:url(images/icon/iconSubMenu.gif) no-repeat 6px 8px;  line-height:20px;}*/
+.menu ul li ul li a{color:#666;}
+.menu ul li ul li a:hover{color:#ff6600;}
+.menu ul li ul li a.active{color:#ff6600; border:1px dotted #b39170;}
+.menu ul li ul li ul{margin:0 0 0 -3px; }
+.menu ul li ul li ul li{width:130px; background:url(images/icon/iconThirdMenu.gif) no-repeat 6px 6px;  }
+.menu ul li ul li ul li a{line-height:16px; line-height:20px\9; color:#777;}
+.menu ul li ul li ul li a:hover{color:#ff6600;}
+	/*--当前菜单--*/
+/*.menu ul li.on{background-position:-157px 0; }*/
+.menu ul li ul li{font-weight:100;}
+.menu ul li ul li.on{background:#ffc19e;}
+.menu ul li ul li.on a{color:#333;}
+.menu ul li ul li.on li a{color:#777;}
+.menu ul li ul li.on li a:hover{}
+	/*--当前菜单 end--*/
+/*========菜单=======*/
+
+/*========公告=======*/
+.bulletin{height:20px; padding:8px 0; clear:both; display:block;}
+.bulletin span{height:20px; display:inline-block; line-height:18px;}
+.bulletin .bulletinTitle{padding:0 0 0 20px; float:left; background:url(images/icon/iconBulletin.gif) no-repeat;}
+.bulletin .bulletinTitle a{color:#666;}
+.bulletin .bulletinNext{float:right; display:inline-block; text-align:right;}
+.bulletin .bulletinNext a{height:20px; margin:0 2px; display:block; overflow:hidden; float:left; background:url(images/button/bulletinNext.gif) no-repeat; line-height:20px; color:#228ac3;}
+.bulletin .bulletinNext a:hover{text-decoration:none;}
+.bulletin .bulletinNext a.prev{width:20px; text-indent:9999px;}
+.bulletin .bulletinNext a.prev:hover{background-position:0 -30px;}
+.bulletin .bulletinNext a.next{width:70px; background-position:-30px 0; text-align:center;}
+.bulletin .bulletinNext a.next:hover{background-position:-30px -30px;}
+/*========公告 end=======*/
+
+/*========标签=======*/
+	/*-----6个字以内----*/
+.tab{width:100%; clear:both; border-bottom:1px solid #fff;}
+.tab ul{height:25px;  border-bottom:1px solid #65abda;}
+.tab ul li{width:95px; height:25px; margin:0 5px 0 0; float:left; text-align:center; background:url(images/tab.gif) no-repeat;  font-size:13px;}
+.tab ul li a{color:#035185;line-height:26px;}
+.tab ul li a:hover{ text-decoration:none;}
+/*.tab ul li:hover{background-position:0 -68px;}
+.tab ul li:hover a{color:#fff;}
+*/.tab ul .selected{background-position:0 -68px; font-weight:bold;}
+.tab ul .selected:hover{background-position:0 -68px; font-weight:bold;}
+.tab ul .selected a{color:#fff;}
+	/*-----6个字以内 end----*/
+
+	/*-----按文字长度自适应----*/
+.tabAuto ul li,
+.tabAuto ul li a{height:25px;background:url(images/tab2.gif) no-repeat;}
+.tabAuto{width:100%; clear:both; border-bottom:1px solid #fff;}
+.tabAuto ul{height:25px;  border-bottom:1px solid #1a89cb;}
+.tabAuto ul li{margin:0 5px 0 0; padding-left:2px; float:left; position:relative; text-align:center;  font-size:13px;}
+.tabAuto ul li a{padding-right:10px; padding-left:8px; display:block; *display:inline-block; overflow:hidden; background-position:right 0; color:#035185;line-height:26px; }
+.tabAuto ul li a:hover{text-decoration:none;}
+.tabAuto ul .selected{background-position:0 -34px; font-weight:bold;}
+.tabAuto ul .selected:hover{background-position:0 -34px; font-weight:bold;}
+.tabAuto ul .selected a{color:#fff; background-position:right -34px;}
+
+.icontips{width:23px; height:11px; position:absolute; right:-5px; top:-6px; background:url(images/iconTips.gif) no-repeat;}
+	/*-----按文字长度自适应 end----*/
+
+	/*-----较小的标签----*/
+.tabS ul li,
+.tabS ul li a{height:21px;background:url(images/tabS.gif) no-repeat;}
+.tabS{width:100%; clear:both; border-bottom:1px solid #fff;}
+.tabS ul{height:21px;  border-bottom:1px solid #65abda;}
+.tabS ul li{ margin:0 1px 0 0; padding-left:2px; float:left; text-align:center;  }
+.tabS ul li a{padding-right:10px; padding-left:8px; display:block; *display:inline-block; overflow:hidden; background-position:right 0; color:#035185;line-height:24px;}
+.tabS ul li a:hover{text-decoration:none;}
+.tabS ul .selected{background-position:0 -34px; font-weight:bold;}
+.tabS ul .selected:hover{background-position:0 -34px; font-weight:bold;}
+.tabS ul .selected a{color:#fff; background-position:right -34px;}
+.tabS ul .liNone{background:none;}
+	/*-----较小的标签 end----*/
+/*========标签 end=======*/
+
+/*========标题=======*/
+.title{width:100%;overflow:hidden;}
+.title h2{padding:0 0 0 20px; float:left; font-size:13px; line-height:16px;margin:10px;font-family:'微软雅黑';}
+.title h2.icon1{background:url(images/ihome.png) no-repeat; }
+.title h2.icon2{background:url(images/icon/iconTitle2.gif) no-repeat; }
+/*========标题end=======*/  
+
+/*========搜索=======*/
+.searchWrap{ clear:both;height:45px;}
+	/*---搜索带圆角外框---*/
+
+.searchWrap .searchBg{border-radius: 5px;padding:10px;width:100%;}
+.searchWrap .searchLeft{width:0px;}
+.searchWrap .searchRight{width:0px; background-position:right 0;}
+.searchWrap .searchButtom{height:5px; background-position:0 -365px;}
+.searchWrap .searchButtomLeft{width:20px; height:5px; background-position:0 -175px;}
+.searchWrap .searchButtoRight{width:20px; height:5px; background-position:-60px -175px;}
+.searchWrap .searchBg{padding:10px 0 5px; background-position:0 -190px;}
+	/*---搜索带圆角外框 end---*/
+
+.search{}
+.search td{padding:0; line-height:18px;padding-left:10px;}
+/*========搜索end=======*/
+
+/*========工具栏=======*/
+.toolBar{height:20px; margin-top:5px; margin-bottom:5px; clear:both;}
+
+	/*---------筛选---------*/
+.screening{float:left;  line-height:20px;}
+.screening a{padding:0 5px; color:#0088ff;}
+/*---------筛选 end---------*/
+
+	/*---------对表格数据的操作---------*/
+.operation{float:right; margin-bottom: 4px;margin-right: 1px;}
+.operation .btn{margin:0 1px;}
+	/*---------对表格数据的操作 end---------*/
+
+	/*---------翻页---------*/
+.pageDown{float:right; color:#666; line-height:20px;}
+.pageDown a{padding:0 5px; color:#0088ff;}
+.pageDown span{padding:0 5px;}
+.pageDown .btnGo{width:22px; height:20px; border:0; background:url(images/button/btn22.gif) no-repeat; cursor:pointer; font-size:12px; font-size:11px\9; *font-size:11px;}
+.pageDown .btnGo:hover{background-position:0 -30px;}
+	/*---------翻页end---------*/
+/*========工具栏=======*/
+
+/*========按钮=======*/
+/* .btnQuery{width:66px; height:22px; border:none; background:url(images/orange_btn.png) no-repeat; cursor:pointer;line-height:22px; color:#fff;} */
+.btnQuery{
+	background: url(images/greenbtn.png) no-repeat;
+width: 68px;
+height: 24px;
+color: #fff;
+border: none;
+cursor: pointer;
+padding-bottom: 3px;
+line-height: 24px;
+}
+/*.btnQuery:hover{background-position:0 -28px;}*/
+
+	/*------蓝色按钮，高24像素 start-------*/
+.btn2,.btn3,.btn4,.btn5,.btn6,.btn7,.btn8,.btn9{height:24px; padding-top:3px\9; *padding-top:3px; border:0; background:url(images/button/btn.gif) no-repeat;  font-size:12px;cursor:pointer}
+.btn2,.btn3,.btn4{width:70px; background-position:0 0;}/*--适用于两个字、三个字的按钮，以下按钮按数字类推--*/
+/*.btn2:hover,.btn3:hover,.btn4:hover{background-position:0 -34px;}*/
+.btn5{width:82px; background-position:-80px 0;}
+.btn5:hover{background-position:-80px -34px;}
+.btn6{width:94px; background-position:-172px 0;}
+.btn6:hover{background-position:-172px -34px;}
+.btn8{width:114px; background-position:-276px 0;}
+.btn8:hover{background-position:-276px -34px;}
+.btn9{width:126px; background-position:-400px 0;}
+.btn9:hover{background-position:-400px -34px;}
+.btn7{width:94px; background-position:-172px 0;}
+.btn7:hover{background-position:-172px -34px;}
+	/*------蓝色按钮，高24像素 end-------*/
+	
+	/*------较大的蓝色按钮，高28像素 start-------*/
+.btnB2,.btnB3,.btnB4,.btnB5,.btnB6,.btnB7,.btnB8,.btnB9{height:28px; padding-top:3px\9; *padding-top:3px; border:0; background:url(images/button/btnBlue.png) no-repeat; color:#003a82; font-size:13px; font-weight:bold; cursor:pointer}
+.btnB2,.btnB3{width:60px; background-position:0 0;}/*--适用于两个字、三个字的按钮，以下按钮按数字类推--*/
+.btnB4{width:73px; background-position:-70px 0;}
+.btnB5{width:86px; background-position:-153px 0;}
+.btnB6{width:99px; background-position:-249px 0;}
+.btnB7{width:112px; background-position:-358px 0;}
+.btnB8{width:125px; background-position:-480px 0;}
+.btnB9{width:138px; background-position:-615px 0;}
+	/*------较大的蓝色按钮，高28像素 end-------*/
+	
+	/*------较小的按钮，高20像素  start-------*/
+.btnS2,.btnS3,.btnS4,.btnS5,.btnS6,.btnS7,.btnS8,.btnS9{height:20px; padding-top:3px\9; *padding-top:3px; border:0; background:url(images/button/btnS.gif) no-repeat;  font-size:12px;cursor:pointer}
+.btnS2,.btnS3{width:50px; background-position:0 0;}/*--适用于两个字、三个字的按钮，以下按钮按数字类推--*/
+.btnS2:hover,.btnS3:hover{background-position:0 -30px;}
+.btnS4{width:70px; background-position:-60px 0;}
+/*.btnS4:hover{background-position:-60px -30px;}*/
+.btnS5{width:77px; background-position:-140px 0;}
+/*.btnS5:hover{background-position:-140px -30px;}*/
+.btnS6{width:84px; background-position:-227px 0;}
+/*.btnS6:hover{background-position:-227px -30px;}*/
+.btnS7{width:96px; background-position:-321px 0;}
+/*.btnS7:hover{background-position:-321px -30px;}*/
+.btnS8{width:108px; background-position:-427px 0;}
+/*.btnS8:hover{background-position:-427px -30px;}*/
+.btnS9{width:118px; background-position:-545px 0;}
+/*.btnS9:hover{background-position:-545px -30px;}*/
+	/*------较小的按钮，高20像素 end-------*/	
+	
+.btnSoso{width:53px; height:22px; _padding-top:22px; overflow:hidden; border:0; background:url(images/button/btnSoso.gif) no-repeat; text-indent:-9999em; cursor:pointer}	/*----搜索小按钮----*/
+.btnSoso:hover{background-position:-63px 0;}	
+.btnAdd{width:83px; height:22px; _padding-top:22px; overflow:hidden;  border:0; background:url(images/button/btnAdd.gif) no-repeat; text-indent:-9999em; cursor:pointer}	/*----添加分类小按钮----*/
+.btnAdd:hover{background-position:-93px 0;}
+
+.btnArrL,.btnArrR,.btnArrAdd,.btnArrMinus{width:18px; height:18px; _padding-top:22px; margin-right:3px; display:inline-block;  overflow:hidden; background:url(images/button/btnArrow.gif) no-repeat; border:0; text-indent:-9999em; cursor:pointer}/*----共用一张背景图，拥有共同属性----*/
+.btnArrL{background-position:0 0;}/*----箭头按钮向左----*/
+.btnArrL:hover{background-position:0 -23px;}
+.btnArrR{background-position:-23px 0;}/*----箭头按钮向右----*/
+.btnArrR:hover{background-position:-23px -23px;}
+.btnArrAdd{background-position:-46px 0;}/*----添加按钮----*/
+.btnArrAdd:hover{background-position:-46px -23px;}
+.btnArrMinus{background-position:-69px 0;}/*----减少按钮----*/
+.btnArrMinus:hover{background-position:-69px -23px;}
+
+.inputSo{width:135px; height:20px; margin:0 5px 0 0; border:1px solid #59a7d0;}/*--搜索输入框--*/
+
+.noBtn{border:none; background:none;cursor:pointer; font-size:14px; font-weight:bold; color:#fff;}/*--弹出窗口工具栏中的按钮：白色字体，没有边框线及背景色--*/
+/*========按钮 end=======*/
+
+
+/*========表单=======*/
+.input1{height:18px;}
+.input2{height:20px;}
+.form24px{width:24px;}
+/*========表单end=======*/
+
+/*========表格样式=======*/
+.tableWrap{clear:both;}
+	/*------蓝色表格风格---*/
+.tableCommon{width:100%; border-collapse:collapse; }
+.tableCommon th{border:1px solid #e0e0e0;color:#454545;font-weight:bold;}
+.tableCommon td{padding:6px 6px 4px 6px; background:#fff;}
+.tableCommon th{ 
+	background: url(images/bar.png) repeat-x;
+height: 28px;
+color: #454545;
+font-weight: bold;
+vertical-align: middle;
+}
+.tableCommon td a{color:#0066bb;}
+	/*------蓝色表格风格 end---*/
+
+	/*------灰色表格风格---*/
+.tableCommon2{width:100%; border-collapse:collapse; border:1px solid #999;}
+.tableCommon2 th,
+.tableCommon2 td{padding:6px 6px 4px 6px; border:1px solid #999; background:#fff;}
+.tableCommon2 th{background:#ccc repeat-x; line-height:18px;}
+.tableCommon2 td a{color:#0066bb;}
+	/*------灰色表格风格 end---*/
+
+.trBg2 td{background:#fff;}
+.trBg1 td{background:#ecf6ff;}
+.overcolor td{background:#d9f1ff;}
+
+.tdBorWhite th{border:1px solid #fff;}
+.tdBorWhite td{background:#fff; border:1px solid #fff;}
+
+.trBlue td,.tdBlue{text-align: right;width: 120px;}/*--蓝色单元格--*/
+.trBlue2 td,.tdBlue2{background:#b8ddff!important;}/*--较深蓝色单元格--*/
+.trBlue3 td,.tdBlue3{background:#72bae2!important;}/*--更深蓝色单元格--*/
+.trBlue4 td,.tdBlue4{background:#f0fcff!important;}/*--最浅蓝色单元格--*/
+.trWhite td, .tdWhite{background:#fff!important;}/*--白色单元格--*/
+.trGray td, .tdGray{background:#999!important;}/*--灰色单元格--*/
+.trGray2 td, .tdGray2{background:#ccc!important;}/*--浅灰色单元格--*/
+.trGray3 td, .tdGray3{background:#eee!important;}/*--更浅灰色单元格--*/
+.tdBg{background:#b9e7ff url(images/tdBg.gif) repeat-x!important;}
+
+.trGreen td, .tdGreen{background:#aef063!important;}/*--绿色单元格--*/
+.trGreen2 td, .tdGreen2{background:#d1fba1!important;}/*--浅绿色单元格--*/
+
+.tdOpera a{padding:0 5px;color:#f60!important;}/*--操作单元格，链接文字为桔色--*/
+
+/*========表格样式 end=======*/
+
+
+/*========图标30px的工具栏=======*/
+.toolBlueBar,
+.toolBlueLeft,
+.toolBlueRight,
+.toolTableBor,
+.toolBlueBar .selected{background:url(images/toolBlueBg.gif);}
+.toolBlueBar{height:40px; background:url(images/toolBlueBg.gif);}
+.toolBlueBar a{font-size:14px; font-weight:bold; color:#fff;}
+
+.toolBlueBar .selected{background-position:0 -90px;}
+.toolBlueLeft{width:12px;background-position:0 -45px;}
+.toolBlueRight{width:12px;background-position:-92px -45px;}
+.toolTableBor{width:12px;background-position:-40px -45px;}
+
+/*========图标30px的工具栏 end=======*/
+
+/*========提示层=======*/
+.tips{width:427px; margin:100px auto 0;}
+.tipsBox{width:100%; border:1px solid #3db1ee; border-bottom:2px solid #3db1ee; border-collapse:collapse;}
+.tipsBox th{height:32px; background:url(images/tipsBg.png) repeat-x; text-align:left;color:#fff;}
+.tipsBox th h2{padding:2px 0 0 10px; _padding:5px 0 0 10px; float:left;  font-size:13px;color:#fff;}
+.tipsBox th a.close{width:17px; height:17px; margin:0px 10px 0 0; _margin:5px 5px 0 0; display:block; overflow:hidden; float:right; background:url(images/closeDiv.png) no-repeat; text-indent:-9999px;}
+.tipsBox th a.close:hover{background-position:-28px 0;}
+.tipsBox td{background:#f1faff;}
+	/*-----提示文字-----*/
+.tipsText{width:350px; margin:30px auto 20px; background:none;}
+.tipsText td{font-size:14px; line-height:25px;}
+.tipsText .tipsImg{width:85px;padding:0 20px 0 0;}
+	/*-----提示文字 end-----*/
+
+	/*-----列表-----*/
+.tipsList{margin:10px 0;}
+.tipsList td{padding:3px 3px 3px 15px; line-height:150%;}
+.tipsList a{padding-left:15px; background:url(images/iconArrow.gif) no-repeat 0 center;}
+	/*-----列表 end-----*/
+/*========提示层 end=======*/
+
+.topMenu{text-align: right;padding-right: 20px;}
+.topMenu a{display: inline-block;padding-left: 20px;margin-right: 10px;color: #681500;height: 18px;line-height: 18px;}
+.help{background: url(images/i3.png) no-repeat left center;}
+.exit{background: url(images/i4.png) no-repeat left center;}
+.f14{font-size: 14px;}
+.copyright span{margin-right: 30px;}
+#footer{background:#f86729;height: 30px;line-height: 30px;text-align: center;color: #fff;position:fixed;bottom:0;width:100%;}
+#ccen2{position: relative;}
+.indexBg{background: url(images/br.png) repeat-y 190px top;position: relative;}
+.arr{display: inline-block;width: 9px;height: 7px;background: url(images/downarr.png) no-repeat;position: absolute;right: 20px;top: 12px;}
+.menu ul li.on .arr{background: url(images/arr.png) no-repeat;}
+#footer {
+background: url(images/footbg.png) repeat-x;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #fff;
+position: fixed;
+bottom: 0;
+width: 100%;
+font-family:'微软雅黑'
+}
+
+#ifm{min-height:500px;_height:500px;}
+.btnS4{width:66px; height:22px; border:none; background:url(images/orange_btn.png) no-repeat; cursor:pointer;line-height:22px; color:#fff;}
+.btn4{width:66px; height:22px; border:none; background:url(images/orange_btn.png) no-repeat; cursor:pointer;line-height:22px; color:#fff;}
+input[type="text"]{padding:2px;}
+.text_bg .tableCommon{border:0px;}
+.text_bg .tableCommon td{border:0px;}
+.undefined td{background:#eee;}

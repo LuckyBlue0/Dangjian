@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" android:background="@drawable/body_bg"
+                android:layout_height="fill_parent">
+    <include layout="@layout/circle_head" android:id="@+id/include_head"/>
+    <LinearLayout
+            android:orientation="horizontal" android:id="@+id/lay_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_alignLeft="@+id/include_head"
+            android:layout_below="@+id/include_head" android:background="@drawable/input_single_bg"
+            android:layout_centerHorizontal="true" android:layout_margin="10dp" android:padding="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签名称："  style="@style/text_regiter"
+                android:id="@+id/textView" android:layout_gravity="center"/>
+        <cn.com.do1.dqdp.android.component.DqdpEditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                bindDS="createTag:label_name"
+                allowNull="false"
+                showName="标签名称"  style="@style/text_input_hit"
+                android:id="@+id/text_tagName" android:layout_gravity="center" android:hint="请输入名称"
+                android:background="@null"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+            <!--android:orientation="horizontal" android:id="@+id/lay_person"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" android:layout_alignLeft="@+id/include_head"-->
+            <!--android:layout_below="@+id/lay_name" android:background="@drawable/input_single_bg"-->
+            <!--android:layout_centerHorizontal="true" android:layout_margin="10dp" android:padding="5dp">-->
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="创建人      ："-->
+                <!--android:id="@+id/textView" android:layout_gravity="center"/>-->
+        <!--<EditText-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/text_creator" android:layout_gravity="center" android:hint=""-->
+                <!--android:background="@null"/>-->
+    <!--</LinearLayout>-->
+    <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="提交审核"  style="@style/big_btn"
+                android:id="@+id/button" android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lay_name" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                android:background="@drawable/bt_login" android:layout_marginTop="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menus> 
+  <menu name="首页管理" permission="" icon="/themes/default/images/menu/icon13.png"> 
+    <menu permission="" icon="/themes/default/images/menu/icon13.png" link="/jsp/component/indexmanager/indexshow/list.jsp" name="首页管理"/> 
+  </menu> 
+</menus>

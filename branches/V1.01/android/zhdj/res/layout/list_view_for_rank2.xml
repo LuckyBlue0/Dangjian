@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_midle_bg"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rank_btn1" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rank_for_brank_on" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rank_btn3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ededed"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="党员姓名" />
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="总积分" />
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="排名位置" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/headLayout"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/myListLayout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/myListView"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/headLayout"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

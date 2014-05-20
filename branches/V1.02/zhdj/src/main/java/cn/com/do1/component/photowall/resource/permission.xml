@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="photowallList" name="留影墙-列表查询" model="留影墙管理"/>
+    <perm code="photowallAdd" name="留影墙-新增" model="留影墙管理"/>
+    <perm code="photowallUpdate" name="留影墙-修改" model="留影墙管理"/>
+    <perm code="photowallDel" name="留影墙-删除" model="留影墙管理"/>
+    <perm code="photowallView" name="留影墙-查看" model="留影墙管理"/>
+    <perm code="photowallEnable" name="留影墙-启用" model="留影墙管理"/>
+    <perm code="photowallDisable" name="留影墙-禁用" model="留影墙管理"/>
+</permissions>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/headLayout" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/title2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_bg1" />
+
+            <RelativeLayout
+                android:id="@+id/personLogoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/personLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/new_mine_logo"
+                    android:scaleType="fitXY"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp" />
+
+                <ImageView
+                    android:id="@+id/editImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/personLogo"
+                    android:layout_alignRight="@id/personLogo"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edit_img"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/danghui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/personLogoLayout"
+                android:background="@drawable/danghui" />
+
+            <TextView
+                android:id="@+id/personName"
+                style="@style/mine_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/danghui"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personLogoLayout"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notice_item_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="姓名" />
+
+                        <TextView
+                            android:id="@+id/xingming"
+                            style="@style/mine_style2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="用户名" />
+
+                        <TextView
+                            android:id="@+id/yonghuming_"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/yonghuming"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身份证号" />
+
+                        <TextView
+                            android:id="@+id/shenfenzhenghao"
+                            style="@style/mine_style2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="手机号码" />
+
+                        <TextView
+                            android:id="@+id/shoujihaoma_"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/shoujihaoma"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notice_item_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="职务" />
+
+                        <TextView
+                            android:id="@+id/zhiwu"
+                            style="@style/mine_style2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <RelativeLayout
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="入党时间" />
+
+                        <TextView
+                            android:id="@+id/rudangshijian"
+                            style="@style/mine_style2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <RelativeLayout
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/dz_"
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="党龄" />
+
+                        <TextView
+                            android:id="@+id/dangling"
+                            style="@style/mine_style2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/dz_"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <RelativeLayout
+                        style="@style/layout_padding"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/dz_"
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="所属组织" />
+
+                        <TextView
+                            android:id="@+id/suoshuzuzhi"
+                            style="@style/mine_style2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/dz_"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <RelativeLayout
+                        style="@style/layout_padding"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/dz_"
+                            style="@style/mine_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="注册组织" />
+
+                        <TextView
+                            android:id="@+id/zhucezuzhi"
+                            style="@style/mine_style2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/dz_"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notice_item_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="电子邮箱" />
+
+                        <TextView
+                            android:id="@+id/dianziyouxiang_"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/dianziyouxiang"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="QQ" />
+
+                        <TextView
+                            android:id="@+id/qq_"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/qq"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/branch_divider" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <TextView
+                            style="@style/mine_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="联系地址" />
+
+                        <TextView
+                            android:id="@+id/lianxidizhi_"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/lianxidizhi"
+                            style="@style/mine_style2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

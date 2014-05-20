@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/head" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/headLayout" >
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_marginTop="-2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@anim/wap_loading_anim" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

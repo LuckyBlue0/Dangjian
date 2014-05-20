@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#4D4D4D"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参与人数："
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/result_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/list_view2"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000" />
+
+        <!-- <ListView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- layout="@layout/list_view" -->
+        <!-- android:cacheColorHint="#00000000" -->
+        <!-- android:divider="#00000000" -->
+        <!-- android:dividerHeight="12dp" > -->
+        <!-- </ListView> -->
+    </LinearLayout>
+
+</LinearLayout>

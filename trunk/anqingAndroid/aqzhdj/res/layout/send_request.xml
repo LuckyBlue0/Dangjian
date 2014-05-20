@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <TextView
+        android:id="@+id/bbsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/headLayout"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bbs_title_bg"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="学习讨论十八大会议心得"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/bbsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+         android:layout_below="@+id/bbsTitle"
+        android:hint="请输入帖子内容"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bbs_content" />
+    
+    <TextView android:id="@+id/biaoqing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bbsContent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/a001"/>
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <EditText
+        android:id="@+id/edit_assess_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"
+        android:hint="谈谈你的想法"
+        android:lines="6"
+        android:padding="10dp"
+        android:textColor="#5A5A5A"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/more_item_bg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/tes"
+            style="@style/mine_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="添加图片（可填）" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/notice_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_margin="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/btn_add_img"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/delImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/new_wall_bg"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/new_wall_del" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/btn_add_img"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/delImage2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/new_wall_bg"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/new_wall_del" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/btn_add_img"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/delImage3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/new_wall_bg"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/new_wall_del" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- <LinearLayout> -->
+<!-- <LinearLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginBottom="1dp" -->
+<!-- android:layout_marginTop="1dp" -->
+<!-- android:orientation="vertical" > -->
+
+
+<!-- <LinearLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:background="#FFF5E4" -->
+<!-- android:orientation="horizontal" -->
+<!-- android:paddingBottom="10dp" -->
+<!-- android:paddingLeft="10dp" -->
+<!-- android:paddingTop="10dp" > -->
+
+
+<!-- <TextView -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:text="开始时间：" -->
+<!-- android:textColor="#595857" -->
+<!-- android:textSize="16sp" /> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/start_time" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:text="2013-10-10 15:30" -->
+<!-- android:textColor="#595857" -->
+<!-- android:textSize="16sp" /> -->
+<!-- </LinearLayout> -->
+
+
+<!-- <LinearLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginTop="1dp" -->
+<!-- android:background="#FFF5E4" -->
+<!-- android:orientation="horizontal" -->
+<!-- android:paddingBottom="10dp" -->
+<!-- android:paddingLeft="10dp" -->
+<!-- android:paddingTop="10dp" > -->
+
+
+<!-- android:layout_marginLeft="1dp" -->
+
+
+<!-- <TextView -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:singleLine="true" -->
+<!-- android:text="结束时间：" -->
+<!-- android:textColor="#595857" -->
+<!-- android:textSize="16sp" /> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/stop_time" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:singleLine="true" -->
+<!-- android:text="2013-10-10 17:30" -->
+<!-- android:textColor="#595857" -->
+<!-- android:textSize="16sp" /> -->
+<!-- </LinearLayout> -->
+<!-- </LinearLayout> -->

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <!-- 三会一课待办数量 -->
+
+    <RelativeLayout
+        android:id="@+id/party_meeting_todo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiezi_list_bg" >
+
+        <TextView
+            android:id="@+id/lbl_party_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/party_meeting_todo"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/party_meeting_todo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lbl_party_meeting"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <!-- 支部活动待办数量 -->
+
+    <RelativeLayout
+        android:id="@+id/branch_todo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiezi_list_bg" >
+
+        <TextView
+            android:id="@+id/lbl_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/branch_activity_todo"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/branch_todo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lbl_branch"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <!-- 党内关爱待办数量 -->
+
+    <RelativeLayout
+        android:id="@+id/party_care_todo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiezi_list_bg" >
+
+        <TextView
+            android:id="@+id/lbl_party_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/party_care_todo"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/party_care_todo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lbl_party_care"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <!-- 志愿活动待办数量 -->
+
+    <RelativeLayout
+        android:id="@+id/vol_activity_todo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiezi_list_bg" >
+
+        <TextView
+            android:id="@+id/lbl_vol_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/vol_activity_todo"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/vol_activity_todo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lbl_vol_activity"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/grid_view"
+        style="@style/grid_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:visibility="visible"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/nullText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="对不起，暂无数据" />
+    </LinearLayout>
+
+</RelativeLayout>

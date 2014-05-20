@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+     <!--文库资料  -->
+     <perm code="dataManager" name="学习教育" model="学习教育"/>
+    <perm code="videoFileManage" name="视频文件管理" model="视频文件管理"/>
+    <perm code="videoFileAdd" name="视频文件新增" model="视频文件管理"/>
+    <perm code="videoFileEdit" name="视频文件修改" model="视频文件管理"/>
+    <perm code="videoFileDel" name="视频文件删除" model="视频文件管理"/>
+    
+    <perm code="partyFileManage" name="党务文件管理" model="党务文件管理"/>
+    <perm code="partyFileAdd" name="党务文件新增" model="党务文件管理"/>
+    <perm code="partyFileEdit" name="党务文件修改" model="党务文件管理"/>
+    <perm code="partyFileDel" name="党务文件删除" model="党务文件管理"/>
+    
+    <perm code="dataFileManage" name="资料文件管理" model="资料文件管理"/>
+    <perm code="dataFileAdd" name="资料文件新增" model="资料文件管理"/>
+    <perm code="dataFileEdit" name="资料文件修改" model="资料文件管理"/>
+    <perm code="dataFileDel" name="资料文件删除" model="资料文件管理"/>
+    
+    <perm code="musicFileManage" name="礼仪歌曲管理" model="礼仪歌曲管理"/>
+    <perm code="musicFileAdd" name="礼仪歌曲新增" model="礼仪歌曲管理"/>
+    <perm code="musicFileDel" name="礼仪歌曲删除" model="礼仪歌曲管理"/>
+    <perm code="musicFileEdit" name="礼仪歌曲修改" model="礼仪歌曲管理"/>
+</permissions>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu name="用户管理" permission="partyMemberManager" icon="/themes/default/css/images/news/i15.png">
+       <menu name="用户管理" permission="workingPartyMemberManager" link="/jsp/component/user/usermanager/list.jsp"/>
+    </menu>
+<menu name="活动管理" permission="partyworkManager" icon="/themes/default/css/images/i6.png">
+        <menu name="活动管理" permission="branchManager" link="/jsp/component/activity/activitymanager/list.jsp"/>
+        
+    </menu> 
+    
+</menus>

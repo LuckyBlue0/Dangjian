@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts> 
+  <constant name="struts.multipart.maxSize" value="10000000000"/>  
+  <package name="defalut" extends="struts-default" namespace="/"/>  
+  <package name="dqdp-default" extends="struts-default" namespace="/"> 
+    <interceptors> 
+      <interceptor name="dqdpParam" class="cn.com.do1.common.framebase.struts.ParamInterceptor"/>  
+      <interceptor name="springSecurityInterceptor" class="cn.com.do1.common.framebase.struts.SpringSecurityInterceptor"> 
+        <param name="loginPage">/jsp/default/login/login_in.jsp</param>  
+        <param name="accessDeniedPage">/jsp/default/login/login_in.jsp</param> 
+      </interceptor>  
+      <interceptor-stack name="adminDefaultStack"> 
+        <interceptor-ref name="springSecurityInterceptor"/>  
+        <interceptor-ref name="exception"/>  
+        <interceptor-ref name="alias"/>  
+        <interceptor-ref name="servletConfig"/>  
+        <interceptor-ref name="prepare"/>  
+        <interceptor-ref name="i18n"/>  
+        <interceptor-ref name="chain"/>  
+        <interceptor-ref name="debugging"/>  
+        <interceptor-ref name="profiling"/>  
+        <interceptor-ref name="scopedModelDriven"/>  
+        <interceptor-ref name="modelDriven"/>  
+        <interceptor-ref name="fileUpload"/>  
+        <interceptor-ref name="checkbox"/>  
+        <interceptor-ref name="staticParams"/>  
+        <interceptor-ref name="params"> 
+          <param name="excludeParams">dojo\..*</param> 
+        </interceptor-ref>  
+        <interceptor-ref name="dqdpParam"/>  
+        <interceptor-ref name="conversionError"/>  
+        <!--<interceptor-ref name="validation">-->  
+        <!--<param name="excludeMethods">input,back,cancel,browse</param>-->  
+        <!--</interceptor-ref>-->  
+        <interceptor-ref name="workflow"> 
+          <param name="excludeMethods">input,back,cancel,browse</param> 
+        </interceptor-ref> 
+      </interceptor-stack> 
+    </interceptors>  
+    <default-interceptor-ref name="adminDefaultStack"/>  
+    <global-results> 
+      <result name="login" type="dispatcher">/jsp/common/return.jsp</result> 
+    </global-results> 
+  </package>  
+  <include file="cn/com/do1/component/baseweb/conf/mainpage-struts.xml"/>  
+  <include file="cn/com/do1/component/schedule/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/dqdploger/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/systemmgr/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/dqdpdictionary/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/basis/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/news/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/index/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/partywork/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/shyk/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/leader/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/data/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/score/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/mobileclient/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/report/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/vote/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/relation/resource/struts.xml"/>  
+  <include file="cn/com/do1/component/pushnotification/resource/struts.xml"/>
+</struts>

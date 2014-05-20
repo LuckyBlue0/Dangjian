@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.do1.zhdj"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-sdk android:minSdkVersion="7" />
+    
+	<supports-screens android:resizeable="true" />
+	
+    <application
+        android:name=".util.Constants"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CustomTheme" >
+        <activity
+            android:name=".activity.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+
+        <activity android:name=".activity.infomation.CycleImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.IndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+       
+        <!-- 资讯start -->
+        <activity android:name=".activity.infomation.InfomationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.infomation.NoticeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.infomation.OrganizaListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.common.WapViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.common.WapViewActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 咨询end -->
+
+
+        <!-- 我的start -->
+        <activity android:name=".activity.mine.BranchIntegralDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.BranchRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.branch.BranchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.user.ViewMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.user.AboutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.branch.BranchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.user.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.user.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.user.BirthdayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.MineNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.DuesPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.PersonInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.mine.PersonIntegralDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.PersonIntegralRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.DuesLearnDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.DuesLearnListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.TestIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.DuesTestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.FreeLifeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<!-- 百宝箱start -->
+        	<activity android:name=".activity.mine.box.ShenbdsListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.BoxIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.BoxDangActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.DangLogoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.DangHistoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.BoxSingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.DangqsdListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.DangwgwListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<activity android:name=".activity.mine.box.ZcwjListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        	<!-- 百宝箱end -->
+        <!-- 我的end -->
+
+
+        <!-- 留影墙start -->
+        <activity android:name=".activity.bbs.wall.CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.bbs.wall.WallIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.wall.WallImageListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.wall.ImageLoadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.bbs.wall.WallPhotoInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.SendRequestActivty" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 留影墙end -->
+        
+        <!-- 留言start -->
+        <activity android:name=".activity.bbs.message.MessageListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.message.MessageDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.message.MessageSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <!-- 留言end -->
+
+
+        <!-- 圈子 -->
+        <activity android:name=".activity.circle.CircleListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".activity.circle.MyCircleActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.circle.GuanggaoDetailActivty"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.circle.SendCircleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.CirclInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.CirclMemberListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.ManagementCircleMemberListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.CircleCountActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.BaomingLisetActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name=".widght.scoll.SwitchViewDemoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <!-- 地图 -->
+        <activity
+            android:name=".activity.map.MapActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.circle.CircleCreateMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        
+        <!-- 民主评议 -->
+        <activity android:name=".activity.bbs.BBSindexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSPartyerListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      	<activity android:name=".activity.bbs.BBSPartyerVoteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSPartyerInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSPartyerVoteResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSOfficeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSOfficeVoteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.BBSOfficeAssessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      	<activity android:name=".activity.bbs.MoreListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      	<activity android:name=".activity.bbs.OurInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      	<activity android:name=".activity.bbs.MoreWelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      	<activity android:name=".activity.bbs.MoreIdeaBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.LiuYingQiangListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.DuesBbsListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.DuesBbsNextListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.DuesBBSDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.LiuYingQiangDeusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.bbs.SendBBSActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 心得体会 -->
+        <activity android:name=".activity.mine.my.XinDeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      
+        <!-- 心得体会 -->
+        <activity android:name=".activity.mine.my.XiexinDeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+      
+<!--         <activity android:name=".activity.circle.CircleCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/> -->
+<!--         <activity android:name=".activity.circle.TagSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/> -->
+<!--         <activity android:name=".activity.circle.CircleJoinListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/> -->
+<!--         <activity android:name=".activity.circle.CircleTagCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/> -->
+        
+        <!-- 我的待办 -->
+        <activity android:name=".activity.mine.my.MyToDoIndexActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.my.MyToDoListActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateVisible|adjustResize|adjustPan"/>
+        <activity android:name=".activity.mine.my.MySignMeetingListActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateVisible|adjustResize|adjustPan"/>
+        <activity android:name=".zxing.CaptureActivity"
+            android:screenOrientation="portrait"  android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateHidden|stateVisible|adjustResize|adjustPan" />
+         <activity android:name=".zxing.DecodeResultActivity"
+			android:screenOrientation="portrait" />
+        
+        <activity android:name=".activity.circle.TagHostActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.my.MyToDoDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.mine.my.GuanaiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.circle.TagHostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+    	<activity android:name=".activity.mine.my.QianDaoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+    	
+    	
+    	<activity
+            android:name="com.do1.push.client.NotificationSettingsActivity"
+            android:label="Notification Settings"
+            android:screenOrientation="portrait" >
+        </activity>
+    	
+    	<service android:name="cn.com.do1.component.service.DownLoadService"/>
+    	 <!-- 推送服务自启动 配置开机自启动广播 -->
+         <receiver android:name="com.do1.push.receiver.BootReceiver">
+		    <intent-filter>
+				<!-- 系统启动完成后会调用 -->
+				<action android:name="android.intent.action.BOOT_COMPLETED">
+				</action>
+		    </intent-filter>
+		</receiver>  
+		
+        <service
+            android:name="com.do1.push.client.NotificationService"
+            android:enabled="true"
+            android:label="CARDPACK_USER_NotificationService" 
+            >
+            <intent-filter>
+                <action android:name="com.do1.push.client.NotificationService" />
+            </intent-filter>
+        </service>
+        
+        <!-- 集成地图start -->
+    </application>
+	<!-- 使WebView全屏 -->
+    <supports-screens
+        android:anyDensity="true" android:largeScreens="true" android:normalScreens="true"
+        android:resizeable="true" android:smallScreens="true" >
+    </supports-screens>
+        
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Wifi related -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FIFESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+</manifest>

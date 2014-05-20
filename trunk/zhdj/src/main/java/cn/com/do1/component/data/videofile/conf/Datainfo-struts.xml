@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="data.videofile" namespace="/videofile" extends="dqdp-default">
+        <action name="videofileAction" class="cn.com.do1.component.data.videofile.ui.DatainfoAction">
+        </action>
+    </package>
+</struts>

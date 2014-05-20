@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+     <menu name="分享管理" permission="" icon="/themes/default/images/menu/icon13.png"> 
+    <menu permission="" icon="/themes/default/images/menu/icon13.png" link="/jsp/component/share/sharemanager/list.jsp" name="分享管理"/> 
+  </menu> 
+</menus>

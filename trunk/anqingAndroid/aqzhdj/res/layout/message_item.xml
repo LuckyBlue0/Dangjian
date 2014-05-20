@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_default_bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/mine_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/mine_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <EditText
+        android:id="@+id/bbsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bbs_title_bg"
+        android:layout_below="@+id/headLayout"
+        android:hint="学习十八大会议心得"
+        android:textSize="15sp"
+        android:paddingLeft="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/bbsType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bbsTitle"
+        android:background="@drawable/bbs_title_bg" >
+        
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:paddingLeft="15dp"
+            android:text="论坛类型:"
+            android:textColor="#4c4c4c"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/typeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrow"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#4c4c4c"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/bbsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+        android:hint="请输入帖子内容"
+        android:layout_below="@+id/bbsType"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bbs_content" />
+    
+    <TextView android:id="@+id/biaoqing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bbsContent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/a001"/>
+
+</RelativeLayout>

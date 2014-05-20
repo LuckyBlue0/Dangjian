@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="index.orgIndex" namespace="/orgIndex" extends="dqdp-default">
+		<interceptors>
+			<interceptor name="checkLogin"
+				class="cn.com.do1.component.index.interceptor.CheckLoginInterceptor" />
+			<interceptor-stack name="checkLoginStack">
+				<interceptor-ref name="checkLogin" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="orgIndexAction"
+			class="cn.com.do1.component.index.index.ui.OrgIndexAction">
+			<interceptor-ref name="checkLoginStack" />
+			<result name="loginPage">/jsp/web/login.jsp</result>
+		</action>
+	</package>
+</struts>

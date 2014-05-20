@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu name="组织关系" permission="orgRelationManager" icon="/themes/default/css/images/i8.png">
+		<menu name="关系转出审核"
+			link="/jsp/component/relation/organization/transferOutList.jsp" />
+		<menu name="关系转入审核"
+			link="/jsp/component/relation/organization/transferIntoList.jsp" />
+	</menu>
+</menus>

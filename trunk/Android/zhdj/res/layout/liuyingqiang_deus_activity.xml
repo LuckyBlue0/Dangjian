@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <Button
+            android:id="@+id/leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_back_thzhd"
+            android:textColor="#AD7306"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/centerTitle"
+            style="@style/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="党员活动" />
+
+        <TextView
+            android:id="@+id/bt_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/icon_1" />
+
+        <Button
+            android:id="@+id/rightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_head_2"
+            android:text="上传"
+            android:textColor="#AD7306"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

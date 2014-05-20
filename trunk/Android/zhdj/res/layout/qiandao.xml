@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headLayout"
+        android:background="@drawable/body_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:text="关于做好2013年响应群众教育路线实践工作的动员讨论大会"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/nostart_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="此会议还没开始"
+            android:textColor="#ab6d07"
+            android:textSize="30dp" />
+
+        <!-- 签到人数 -->
+
+        <LinearLayout
+            android:id="@+id/layout_qiandao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/yijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已报名"
+                android:textColor="#ab6d07"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/renshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/renshu"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="#ab6d07"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_mytodo_join"
+            android:gravity="center"
+            android:text="我要请假"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <!-- 两个按钮 -->
+
+        <LinearLayout
+            android:id="@+id/erweima_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/mytodo_join"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_mytodo_join"
+                android:gravity="center"
+                android:text="马上签到"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/mytodo_leave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_mytodo_leave"
+                android:gravity="center"
+                android:text="重新扫描"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_xinde"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notice_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txt_xinyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动开始后还可查看大家的志愿心语"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/chakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/zhiyuanbg"
+                    android:gravity="center"
+                    android:text="查看志愿心语"
+                    android:textColor="#808080" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

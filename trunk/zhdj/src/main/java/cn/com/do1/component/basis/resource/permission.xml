@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="partyMemberManager" name="党员管理" model="党员管理"/>
+    <perm code="partyDevelopmentMemberManager" name="党员发展" model="党员发展"/>
+    
+    
+    <perm code="workingPartyMemberManager" name="在职党员信息管理" model="党员管理"/>
+    <perm code="workingPartyMemberSearch" name="在职党员信息查询" model="党员管理"/>
+    <perm code="workingPartyMemberView" name="在职党员信息详情" model="党员管理"/>
+    <perm code="workingPartyMemberAdd" name="在职党员信息新增" model="党员管理"/>
+    <perm code="workingPartyMemberEdit" name="在职党员信息修改" model="党员管理"/>
+    <perm code="workingPartyMemberDel" name="在职党员信息删除" model="党员管理"/>
+    
+    <perm code="flowPartyMemberManager" name="流动党员信息管理" model="党员管理"/>
+    <perm code="flowPartyMemberSearch" name="流动党员信息查询" model="党员管理"/>
+    <perm code="flowPartyMemberView" name="流动党员信息详情" model="党员管理"/>
+    <perm code="flowPartyMemberAdd" name="流动党员信息新增" model="党员管理"/>
+    <perm code="flowPartyMemberEdit" name="流动党员信息修改" model="党员管理"/>
+    <perm code="flowPartyMemberDel" name="流动党员信息删除" model="党员管理"/>
+    
+    <perm code="historyPartyMemberManager" name="历史党员信息管理" model="党员管理"/>
+    <perm code="historyPartyMemberSearch" name="历史党员信息查询" model="党员管理"/>
+    <perm code="historyPartyMemberView" name="历史党员信息详情" model="党员管理"/>
+    <perm code="historyPartyMemberAdd" name="历史党员信息新增" model="党员管理"/>
+    <perm code="historyPartyMemberEdit" name="历史党员信息修改" model="党员管理"/>
+    <perm code="historyPartyMemberDel" name="历史党员信息删除" model="党员管理"/>
+    
+
+    <perm code="partyDevelopmentManager" name="党员发展信息管理" model="党员发展"/>
+    <perm code="partyDevelopmentSearch" name="党员发展信息查询" model="党员发展"/>
+    <perm code="partyDevelopmentView" name="党员发展信息详情" model="党员发展"/>
+    <perm code="partyDevelopmentAdd" name="党员发展信息新增" model="党员发展"/>
+    <perm code="partyDevelopmentEdit" name="党员发展信息修改" model="党员发展"/>
+    <perm code="partyDevelopmentDel" name="党员发展信息删除" model="党员发展"/>
+    <perm code="partyDevelopmentAudit" name="党员发展信息审核" model="党员发展"/>
+    
+    
+    
+    <perm code="basisManager" name="基础管理" model="基础管理"/>
+    <perm code="newsColumnAttManager" name="新闻栏目属性管理" model="基础管理"/>
+    
+    <perm code="newsTypeManager" name="新闻类型管理" model="基础管理"/>
+    <perm code="newsTypeSearch" name="新闻类型查询" model="基础管理"/>
+    <perm code="newsTypeView" name="新闻类型详情" model="基础管理"/>
+    <perm code="newsTypeAdd" name="新闻类型新增" model="基础管理"/>
+    <perm code="newsTypeEdit" name="新闻类型修改" model="基础管理"/>
+    <perm code="newsTypeDel" name="新闻类型删除" model="基础管理"/>
+    
+    <perm code="partyRelationManager" name="组织关系管理" model="基础管理"/>
+    
+    <perm code="partyDevelopmentManager" name="发展党员信息管理" model="基础管理"/>
+    <perm code="partyDevelopmentSearch" name="发展党员信息查询" model="基础管理"/>
+    <perm code="partyDevelopmentView" name="发展党员信息详情" model="基础管理"/>
+    <perm code="partyDevelopmentAdd" name="发展党员信息新增" model="基础管理"/>
+    <perm code="partyDevelopmentEdit" name="发展党员信息修改" model="基础管理"/>
+    <perm code="partyDevelopmentDel" name="发展党员信息删除" model="基础管理"/>
+    
+    <perm code="userInfoManager" name="用户信息管理" model="基础管理"/>
+    <perm code="userInfoSearch" name="用户信息查询" model="基础管理"/>
+    <perm code="userInfoView" name="用户信息详情" model="基础管理"/>
+    <perm code="userInfoAdd" name="用户信息新增" model="基础管理"/>
+    <perm code="userInfoEdit" name="用户信息修改" model="基础管理"/>
+    <perm code="userInfoDel" name="用户信息删除" model="基础管理"/>
+    
+    
+</permissions>

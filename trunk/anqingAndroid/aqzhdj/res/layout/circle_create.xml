@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:focusable="false" >
+
+    <include
+        android:id="@+id/include_head"
+        layout="@layout/circle_head" />
+
+    <LinearLayout
+        android:id="@+id/lay_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/include_head"
+        android:layout_below="@+id/include_head"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_single_bg"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text_regiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="群名称：" />
+
+        <cn.com.do1.dqdp.android.component.DqdpEditText
+            android:id="@+id/circle_name"
+            style="@style/text_input_hit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            allowNull="false"
+            bindDS="createCircle:name"
+            showName="群名称"
+            android:background="@null"
+            android:hint="输入标题" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/include_head"
+        android:layout_below="@+id/lay_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_single_bg"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/paizhao"
+            style="@style/text_regiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="选择标签" />
+
+        <cn.com.do1.dqdp.android.component.DqdpValueText
+            android:id="@+id/textView2"
+            style="@style/text_input_hit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/paizhao"
+            allowNull="false"
+            bindDS="createCircle:label_ids"
+            showName=":请选择标签" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_comm"
+        style="@style/text_regiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lay_name"
+        android:layout_below="@+id/lay_tag"
+        android:paddingLeft="10dp"
+        android:text="群简介" />
+
+    <ImageView
+        android:id="@+id/img_ta_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_comm"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/textarea_head" />
+
+    <cn.com.do1.dqdp.android.component.DqdpEditText
+        android:id="@+id/circle_comm"
+        style="@style/text_input_hit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_ta_head"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        bindDS="createCircle:info"
+        android:background="@drawable/textarea_content"
+        android:editable="true"
+        android:gravity="top"
+        android:hint="输入群简介内容"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:maxLines="7"
+        android:paddingLeft="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_comm"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/circle_content_foot1" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/big_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_login"
+        android:text="创建" />
+
+</RelativeLayout>

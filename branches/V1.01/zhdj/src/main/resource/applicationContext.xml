@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">  
+  <context:annotation-config/>  
+  <aop:aspectj-autoproxy/>  
+  <!-- 启用@AspectJ 支持 -->  
+  <bean id="dqdpDaoAspect" class="cn.com.do1.common.framebase.spring.DqdpAspect"/>  
+  <context:property-placeholder location="classpath:application.properties"/>  
+  <aop:config> 
+    <aop:pointcut id="serviceOperation" expression="bean(*Service)"/>  
+    <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation"/> 
+  </aop:config>  
+  <tx:advice id="txAdvice" transaction-manager="txManager"> 
+    <tx:attributes> 
+      <tx:method name="find*" read-only="true"/>  
+      <tx:method name="get*" read-only="true"/>  
+      <tx:method name="load*" read-only="true"/>  
+      <tx:method name="list*" read-only="true"/>  
+      <tx:method name="search*" read-only="true"/>  
+      <!--<tx:method name="test*" read-only="true" />-->  
+      <tx:method name="*" rollback-for="Throwable"/> 
+    </tx:attributes> 
+  </tx:advice>  
+  <!--
+		<import
+		resource="classpath:src/main/resource/demo/**/config/*-spring.xml"/>
+	-->  
+  <!--项目功能的spring配置开始 -->  
+  <!--<import resource="classpath:com/mds/**/config/*-spring.xml" />-->  
+  <!--项目功能的spring配置结束 -->  
+  <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"> 
+    <property name="dataSource" ref="dataSource"/> 
+  </bean>  
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
+    <property name="driverClassName" value="${jdbc.driverClassName}"/>  
+    <property name="url" value="${jdbc.url}"/>  
+    <property name="username" value="${jdbc.username}"/>  
+    <property name="password" value="${jdbc.password}"/>  
+    <!--<property name="initialSize" value="${database.minconn}"/>-->  
+    <!--<property name="maxActive" value="${database.maxconn}"/>-->  
+    <!--<property name="logAbandoned" value="true"/>-->  
+    <!--<property name="removeAbandoned" value="true"/>-->  
+    <!--<property name="removeAbandonedTimeout" value="180"/>-->  
+    <!--<property name="timeBetweenEvictionRunsMillis" value="300000"/>-->  
+    <!--<property name="minEvictableIdleTimeMillis" value="1800000"/>-->  
+    <!--<property name="testWhileIdle" value="true"/>-->  
+    <!--
+			<property name="validationQuery" value="select count(1) from
+			tb_dqdp_user"/>
+		--> 
+  </bean>  
+  <!-- 所有dao的parent-->  
+  <bean name="baseDAO" abstract="true" scope="prototype"> 
+    <property name="dataSource"> 
+      <ref local="dataSource"/> 
+    </property> 
+  </bean>  
+  <!-- SQLSERVER -->  
+  <!--
+		<bean id="sqlDataSource"
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+	-->  
+  <!--
+		<property name="driverClassName"
+		value="net.sourceforge.jtds.jdbc.Driver"/>
+	-->  
+  <!--
+		<property name="url"
+		value="jdbc:jtds:sqlserver://192.168.1.3:1533;DatabaseName=dsms;sendStringParametersAsUnicode=false"/>
+	-->  
+  <!--<property name="username" value="dsms"/>-->  
+  <!--<property name="password" value="dsms"/>-->  
+  <!--</bean>-->  
+  <!--&lt;!&ndash; 所有SQLSERVER dao的parent&ndash;&gt;-->  
+  <!--<bean name="sqlBaseDAO" abstract="true">-->  
+  <!--<property name="dataSource">-->  
+  <!--<ref local="sqlDataSource"/>-->  
+  <!--</property>-->  
+  <!--</bean>-->  
+  <!--<import resource="classpath:securit-app-context.xml"/>-->  
+  <bean name="cfgMgrBean" class="cn.com.do1.dqdp.core.ConfigMgr"/>  
+  <import resource="classpath:cn/com/do1/dqdp/core/**/*-spring.xml"/>  
+  <import resource="classpath:cn/com/do1/common/**/*-spring.xml"/>  
+  <import resource="classpath:custom-spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/index/resource/spring.xml"/>  
+  <import resource="classpath:custom-spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/systemmgr/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/basis/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/news/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/vote/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/relation/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/score/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/data/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/dqdploger/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/partywork/resource/spring.xml"/>   
+  <import resource="classpath:cn/com/do1/component/shyk/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/schedule/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/dqdpdictionary/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/leader/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/report/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/mobileclient/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/user/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/indexmanager/resource/spring.xml"/>  
+  <import resource="classpath:cn/com/do1/component/share/resource/spring.xml"/>
+  <import resource="classpath:cn/com/do1/component/pushnotification/resource/spring.xml"/>
+  <import resource="classpath:cn/com/do1/component/photowall/resource/spring.xml"/>
+  <import resource="classpath:cn/com/do1/component/post/resource/spring.xml"/>
+   <import resource="classpath:cn/com/do1/component/team/resource/spring.xml"/>
+</beans>
+

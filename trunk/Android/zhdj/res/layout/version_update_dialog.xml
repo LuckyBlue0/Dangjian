@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_banner"
+            android:gravity="center"
+            android:text="检测到新版本"
+            android:textColor="#fffefe"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/relMiddle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_mid"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="更新内容:"
+                android:textColor="#4c4c4c"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/now_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mytodo_confirm"
+                    android:gravity="center"
+                    android:text="马上下载"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/later_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_mytodo_cancel"
+                    android:gravity="center"
+                    android:text="取    消"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dialog_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relMiddle"
+            android:background="@drawable/dialog_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

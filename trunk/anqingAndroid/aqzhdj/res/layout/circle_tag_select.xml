@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:background="@drawable/body_bg"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <include layout="@layout/circle_head" android:id="@+id/include_head"/>
+    <include layout="@layout/circle_searchbar" android:id="@+id/include_searchbar"/>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_view_style"
+            android:id="@+id/listView" android:layout_gravity="left|center_vertical"/>
+
+
+</LinearLayout>

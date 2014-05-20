@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fdfbf7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xianqingcolor" >
+
+                <TextView
+                    android:id="@+id/mytodo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="123"
+                    android:textColor="#4c4c4c"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_title"
+                    android:background="@drawable/notice_line" />
+
+                <!-- 第一行 -->
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:background="#e2dfd8" >
+
+                    <TextView
+                        android:id="@+id/mytodo_typetxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/xianqingcolor"
+                        android:padding="10dp"
+                        android:text="会议类型："
+                        android:textColor="#666"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/mytodo_organisertxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/xianqingcolor"
+                        android:padding="10dp"
+                        android:text="发起人 ："
+                        android:textColor="#666"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout1"
+                    android:background="@drawable/notice_line" />
+
+                <!-- 第二行 -->
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:background="#e2dfd8" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/xianqingcolor"
+                            android:padding="10dp"
+                            android:text="开始时间："
+                            android:textColor="#666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/mytodo_meetingtimetxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/xianqingcolor"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="#666"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:background="@color/xianqingcolor"
+                            android:padding="10dp"
+                            android:text="开始时间："
+                            android:textColor="#666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/mytodo_endmeetingtimetxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/xianqingcolor"
+                            android:singleLine="true"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="#666"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2"
+                    android:background="@drawable/notice_line" />
+                <!-- 第三行 -->
+
+                <TextView
+                    android:id="@+id/mytodo_meetingaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:padding="10dp"
+                    android:text="会议地点  ："
+                    android:textColor="#666"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mytodo_meetingaddress"
+                    android:background="@drawable/branch_divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/mytodo_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textColor="#4c4c4c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mytodo_actors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text=""
+                    android:textColor="#8d8d8d"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/mytodo_join"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mytodo_join"
+                    android:gravity="center"
+                    android:text="我要报名"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/mytodo_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mytodo_leave"
+                    android:gravity="center"
+                    android:text="二维码签到"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

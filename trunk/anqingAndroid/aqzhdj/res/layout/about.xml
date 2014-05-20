@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/about" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/notice_item_bg"
+        android:orientation="vertical" >
+        
+        <ImageView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_mine_head"/>
+
+        <RelativeLayout
+            android:id="@+id/relViewStart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_mine_middle"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="欢迎页"
+                android:textColor="#4c4c4c"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/branch_arrow" />
+        </RelativeLayout>
+
+        <!--  <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relViewStart"
+            android:background="@drawable/branch_divider" />
+
+        <RelativeLayout
+            android:id="@+id/relViewManage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_mine_middle"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="用户反馈"
+                android:textColor="#4c4c4c"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/branch_arrow" />
+        </RelativeLayout>-->
+        
+         <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_mine_bottom" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+        
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/versionCode"
+            android:layout_above="@id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            style="@style/notice_title"
+            android:text=""/>
+        
+        <LinearLayout 
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kuang"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/versionCode"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kuangicon"/>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:textColor="#4c4c4c"
+                android:text="党员服务热线 : "/>
+            
+            <TextView 
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/red"
+                android:text="020-87712371"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+	
+</LinearLayout>

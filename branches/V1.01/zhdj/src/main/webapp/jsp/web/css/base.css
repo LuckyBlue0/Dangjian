@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*=========css reset===========*/
+body{font-family:宋体;font-size:14px;line-height:24px;}
+a{color:#133db6;text-decoration:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0; }
+table{border-collapse:collapse; border-spacing:0; }
+fieldset,img{border:none;}
+.fwhite{color:#fff;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+ol,ul,li{list-style-type :none;}
+img,label{vertical-align:middle;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+input,label,select{vertical-align: middle;}
+/*=========css reset end===========*/
+
+/*========定位==========*/
+
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.vm{vertical-align:middle;}
+.vt{vertical-align:top;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute; right:0;}
+.zoom{zoom:1;}
+.hidden{display:none;}
+.block{display:block;}
+.none{display:none;}
+.overflow{overflow:hidden;zoom:1;}
+
+/*========定位 结束===========*/
+
+/*========字体=========*/
+
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
+.t2{text-indent:2em;}
+.f333{color:#333;}
+
+.lh24{line-height:24px;}
+.color_title{color:#333;}		  /*--标题颜色--*/
+.color_body{color:#666;}		  /*--正文颜色--*/
+.color_warn{color:#ff0000;}		  /*--提醒字体颜色--*/	
+.color_tips{color:#999;}		  /*--提示性文字的颜色--*/
+.color_nav{color:#425c9e;}        /*--正文、标题、导航的颜色--*/
+.color_hightlight{color:#ff3c0d;} /*--高亮色为橘红色--*/
+
+/*========字体 结束=========*/
+
+/*=======边距 start======*/
+.ma{margin-left:auto; margin-right:auto;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m30{margin:30px;}
+
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+
+.p5{padding:5px;}
+.pt6{padding-top: 6px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p30{padding:30px;}
+
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+
+.pb0{padding-bottom:0;}
+.pb5{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb20{padding-bottom:20px;}
+.pb30{padding-bottom:30px;}
+
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl20{padding-left:20px;}
+.pl25{padding-left:25px;}
+.pl30{padding-left:30px;}
+
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr20{padding-right:20px;}
+.pr25{padding-right:25px;}
+.pr30{padding-right:30px;}
+
+/*=======边距 end======*/
+
+/*==============主体颜色==============*/
+.color_default_blue{color:#425b9d;}
+.color_default_dark{color:#5684F2;}     /*--主体颜色为深蓝色--*/
+.color_default_demitint{color:#6F9AFF;}  /*--主体颜色为蓝色的中间色--*/
+.color_default_light{color:#8DB7FF;}    /*--主体颜色为浅蓝色-*/
+
+/*==============主体颜色 结束==============*/
+
+/*==============辅助颜色==============*/
+
+.color_guides_redOrange{color:#FC4519;}  /*--橘红色--*/
+.color_guides_orange{color:#FE8710;}     /*--橙色--*/
+.color_guides_yellow{color:#FFCA11;}     /*--黄色--*/
+.color_guides_lightGreen{color:#42BB37;} /*--浅绿色--*/
+.color_guides_darkGreen{color:#19862F;}  /*--深绿色--*/
+.color_guides_lightGray{color:#919191;}  /*--浅灰色--*/
+.color_guides_darkGray{color:#333;}      /*--深灰色--*/
+
+
+/*==============辅助颜色 结束==============*/
+
+/*=============框架布局==================*/
+.header_top{height:27px;line-height:27px; text-align:right;color:#425c9e; background:#edf1f5;}
+.noticeBar{background:#f7f8fa;height:36px;line-height:36px;padding-left:10px; overflow:hidden;position: relative;}
+
+.content{color:#133db6;}
+/*=============框架布局 结束==================*/
+
+
+/*=========文字间距=========*/
+
+
+/*=========文字间距 结束=========*/
+
+/*=========标题=========*/
+.article_title{font-size:18px;color:#333;}
+.subTitle{font-size:12px;color:#999;}
+.title{font-size:14px;}
+.bar_title{font-size:16px;color:#333;height:29px;line-height:29px;padding-left:10px;}
+
+/*=========文章样式=========*/
+
+.article{color:#666;}
+.article p{margin-top:15px;}
+.page{color:#666;}
+.page a{color:#666;margin-right:15px;}
+
+
+/*========表单提交按钮=========*/
+.form_btn{height:36px;line-height:36px;font-size:16px;background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#e4ecf3));border:1px solid #425b9d; text-align:center;width:290px;margin:10px auto; display:inline-block;color:#425b9d;}
+.form_btn:hover{background:-webkit-gradient(linear,left top,left bottom,from(#e4ecf3),to(#fff));}
+/*============列表样式=============*/
+
+.list{overflow:hidden;}
+.list li{padding-left:10px;border-bottom:1px solid #e4e7ec;background:url(../images/icon_arrowR.png) no-repeat 97% center;padding-right:20px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;width:88%;}
+.list li a{font-size:16px;line-height:38px;color:#425b9d;}
+
+.list_imgText{overflow:hidden;zoom:1;}
+.list_imgText .right .title{color:#445fa2;font-size:16px;}
+.list_imgText .right .subTitle{color:#666;font-size:14px;margin-top:10px;}
+
+/*===========搜索框===========*/
+
+.search_btn{background:url(../images/sBtn.png) no-repeat;width:22px;height:22px;display:block;position:absolute; right:10px;top:7px;}
+.bar_search{background:-webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#ecf1f6)); height:44px;border:1px solid #d1d7ec; }
+.search{margin:5px 10px;border:1px solid #ccc;-webkit-border-radius:10px;padding:3px 10px;position:relative;-webkit-box-shadow:0 1px 1px rgba(255,255,255,0.75),inset 0 1px 1px rgba(91,97,118,0.75); background:white;position:relative;}
+.search .inp{width:175px;height:20px;padding:1px;border:0;background:none;margin-left:5px;}
+
+
+/*========搜索栏下拉列表======*/
+
+.selectList{float:left;}
+.search_options{position:absolute;top:-7px; background:#f8f9fb; border:1px solid #cfcfcf;-webkit-border-radius:0 0 5px 5px;border-top:0; left:-1px; }
+.search_options a{color:#666;}
+.search_options li{padding:0 15px;border-bottom:1px dashed #ccc;height:30px;line-height:30px;}
+.search_options li:last-child{border-bottom:0;}
+.search_value{padding-right:20px;background:url(../images/sel_btn.gif) no-repeat right center;color:#425c9e;}
+
+/*=========搜索柆下拉列表 end===========*/
+
+/*=========普通的下拉列表=========*/
+
+.selectList2{border:1px solid #cacfd5; height:29px;line-height:29px;background:url(../images/btn_sel2.png) no-repeat right top;padding-right:23px;position:relative;}
+.search_options2{position:absolute;border:1px solid #ccc;width:100%; background:#fff; left:-1px; z-index:99;}
+.search_value2{padding-left:10px;color:#425b9d;}
+.search_options2 li{height:30px;line-height:30px;border-bottom:1px dashed #ccc;padding-left:10px;}
+.search_options2 li:last-child{border-bottom:0;}
+.search_options2 li a{color:#666;}
+
+
+/*=========翻页=========*/
+.paging{ line-height:30px; color:#425c9e; font-size:16px; margin:10px 5px;}
+.page_back{ background:url(../images/page_left.png) no-repeat 0 0; width:67px; height:26px; display:inline-block; cursor:pointer; border:none;}
+.next_page{ background:url(../images/page_right.png) no-repeat 0 0; width:67px; height:26px; display:inline-block; cursor:pointer; border:none;}
+.page_skip{ background:url(../images/page_skip.png) no-repeat 0 0; width:33px; height:24px; display:inline-block; cursor:pointer; border:none;}
+.paging span{ line-height:30px; margin:0 5px;}
+.paging input{ border:1px solid #cacfd5; width:34px; height:18px; padding:2px; margin-right:5px;}
+.paging a{ vertical-align:-8px; margin:0 5px; padding:0;}
+
+/*=========翻页 end=========*/

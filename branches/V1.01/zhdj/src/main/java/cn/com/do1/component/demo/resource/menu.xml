@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="xx管理" permission="">
+        <menu name="新增xx" link="/jsp/component/demo/add.jsp?id=xxx"/>
+        <menu name="xx管理" link="/jsp/component/demo/list.jsp?param=1&amp;param=2"/>
+        <menu name="xx详情" link="/jsp/component/demo/detial.jsp"/>
+    </menu>
+    <menu name="自动创建" permission="">
+        <menu name="新增xx" link="/jsp/component/creater/creater_add.jsp?id=xxx"/>
+        <menu name="xx管理" link="/jsp/component/creater/creater_list.jsp"/>
+        <menu name="xx详情" link="/jsp/component/creater/creater_detail.jsp"/>
+    </menu>
+</menus>

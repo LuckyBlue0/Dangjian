@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_banner"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/big_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="温馨提示"
+                android:textColor="#fffefe"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_mid"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="12dip"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已下载0%"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文件存放于sdcard/thzhd文件夹下"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/btn_mytodo_confirm"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="播放"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/btn_mytodo_cancel"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/dialog_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

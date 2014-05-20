@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/maxline_input"
+                android:gravity="center_vertical|top"
+                android:hint="您的建议，是我们持续的动力！"
+                android:maxLines="5"
+                android:padding="15dp"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/content_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="140"
+                android:textColor="#4c4c4c"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/cleanMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_alignBottom="@+id/content_count"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/clean" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relContent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_single_bg"
+            android:gravity="center_vertical"
+            android:hint="输入您的联系方式（手机号/邮箱）"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#4c4c4c"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contacts"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_submit_thzhd"
+            android:text="提交反馈"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

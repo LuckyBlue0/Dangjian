@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="versionManage" name="版本管理" model="版本管理"/>
+    <perm code="versionAdd" name="版本新增" model="版本管理"/>
+    <perm code="versionEdit" name="版本修改" model="版本管理"/>
+    <perm code="versionDel" name="版本删除" model="版本管理"/>
+    
+    <perm code="installManage" name="安装记录" model="安装记录"/>
+     <perm code="installExp" name="导出" model="安装记录"/>
+     
+      <perm code="suggestionManage" name="意见管理" model="意见管理"/>
+       <perm code="suggestionExp" name="导出" model="意见管理"/>
+       <perm code="suggestionDel" name="删除" model="意见管理"/>
+</permissions>

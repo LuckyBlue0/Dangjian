@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/jifenpaiming_bg1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="" />
+        
+        <RelativeLayout 
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/a1"
+	            style="@style/mine_style2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="作者：" />
+            <TextView
+                android:layout_toRightOf="@+id/a1"
+	            android:id="@+id/author"
+	            style="@style/mine_style2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="" />
+            <TextView
+	            style="@style/mine_style2"
+	            android:layout_toLeftOf="@+id/createTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="发布时间：" />
+            <TextView
+	            android:id="@+id/createTime"
+	            style="@style/mine_style2"
+	            android:layout_alignParentRight="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/mine_style2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/imageListLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/mine_style2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wall_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="评论列表" />
+
+    <TextView
+        android:id="@+id/noneText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="暂无评论"
+        android:visibility="gone" />
+
+</LinearLayout>

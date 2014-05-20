@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+    <com.do1.aqzhdj.activity.circle.widget.FlingGallery
+        android:id="@+id/flingGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="10dp" />
+
+   <!-- <com.do1.thzhd.activity.circle.widget.PageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flingGallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-35dp"
+        android:paddingTop="10dp" /> --> 
+
+</LinearLayout>

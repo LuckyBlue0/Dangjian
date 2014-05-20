@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 新正式环境 -->
+    <!-- <string name="server_url">http://221.176.36.74:80/MS/</string> -->
+    <!-- 新测试环境 -->
+    <!-- <string name="server_url">http://221.176.36.74:80/TMS/</string> -->
+    <string name="server_url">http://183.63.138.178:2013/zhdj/</string>
+    <!-- 正式环境 -->
+    <!-- <string name="server_url">http://www.ith71.cn:80/MS/</string> -->
+    <!-- 测试环境 -->
+    <!-- <string name="server_url">http://www.ith71.cn:80/TMS/</string> -->
+
+
+    <!-- 登录 -->
+    <!-- <string name="login">UserLogin.aspx</string> -->
+    <string name="login">userinfo/userinfo!login.action</string>
+
+    <!-- 设备安装注册接口 -->
+    <string name="installreg">device/deviceAction!regester.action</string>
+    <!-- 设备安装记录接口 -->
+    <string name="installRecord">install/install!installRecord.action</string>
+    <!-- 版本更新接口 -->
+    <string name="update_version">version/version!getNewVersion.action</string>
+    <!-- 检查用户id的唯一性 -->
+    <string name="check_user_id">UserOnlyValidate.aspx</string>
+    <!-- 注册 -->
+    <string name="check_register">UserRegister.aspx</string>
+    <!-- 党费缴纳 -->
+    <string name="dues_pay">GetPartyMemberCost.aspx</string>
+    <!-- 密码修改 -->
+    <string name="change_password">userinfo/userinfo!modifyUserPwd.action</string>
+    <!-- 资讯详情 -->
+    <string name="infomation_detail">GetInformationDetail.aspx</string>
+    <!-- 资讯列表 -->
+    <!-- <string name="infomation_list">GetInformationList.aspx</string> -->
+    <string name="infomation_list">news/newsinfo!newsInfoList.action</string>
+
+    <!-- 资讯详情 -->
+    <string name="newdetail">news/newsinfo!newsInfoDetails.action</string>
+    <!-- 资讯最新一条数据内容 -->
+    <!-- <string name="infomation_the_new">GetLastInformationList.aspx</string> -->
+    <string name="infomation_the_new">news/newsinfo!indexNewsInfo.action</string>
+    <!-- 支部 -->
+    <string name="branch">GetBranchAddressList.aspx</string>
+    <!-- 组织风采 -->
+    <string name="organiza_list">GetBranchActivityList.aspx</string>
+    <!-- 我的首页 -->
+    <!-- <string name="mine">GetMembersInfo.aspx</string> -->
+    <string name="mine">userinfo/userinfo!myUserInfo.action</string>
+    <!-- 个人信息编辑保存 -->
+    <!-- <string name="save_person_info">UpdateMembersInfo.aspx</string> -->
+    <string name="save_person_info">userinfo/userinfo!modifyUserInfo.action</string>
+    <!-- 意见反馈 -->
+    <string name="message">ViewManage.aspx</string>
+    <!-- 个人积分详情 -->
+    <string name="person_integral_detail">userinfo/userinfo!rankingDetailsList.action</string>
+    <!-- 个人积分排名接口 -->
+    <string name="person_rank">userinfo/userinfo!integralRanking.action</string>
+    <!-- 我的积分排名查询接口（所有、所在支部） -->
+    <string name="my_rank">integral/integral!integralRanking.action</string>
+    <!-- 党历史上的今天 -->
+    <string name="dang_history">GetPartyHistoryTodayList.aspx</string>
+    <!-- 圈子列表 -->
+    <string name="getMyCircleList">GetMyCircleList.aspx</string>
+    <!-- 创建圈子 -->
+    <string name="createCircle">CreateCircle.aspx</string>
+    <!-- 创建标签 -->
+    <string name="createTag">createTag.aspx</string>
+    <!-- 标签列表 -->
+    <string name="getTagList">GetTagList.aspx</string>
+    <!-- 获取所有圈子 -->
+    <string name="getAllCircleList">GetAllCircleList.aspx</string>
+    <!-- 我的活动列表 -->
+    <string name="getMyActivityAbleList">GetMyActivityAbleList.aspx</string>
+    <!-- 加入圈子 -->
+    <string name="applyJoinCircle">ApplyJoinCircle.aspx</string>
+    <!-- 标签投票 -->
+    <string name="tagVote">TagVote.aspx</string>
+    <!-- 礼仪歌曲、党务流程指引列表接口 -->
+    <string name="box_sing">GetPartyFlowAndMusicList.aspx</string>
+    <string name="box_sing2">GetPartyMusicList.aspx</string>
+    <!-- 党情速递列表接口 -->
+    <string name="box_dangqsd">GetPartysituationCourier.aspx</string>
+    <!-- 留影墙类型列表接口 -->
+    <string name="wall_type">GetPartyPhotoTypeList.aspx</string>
+    <!-- 留影墙列表接口 -->
+    <string name="wall_list_by_type">GetPartyPhotoList.aspx</string>
+    <!-- 留影墙列表接口2（带搜索） -->
+    <string name="wall_list_by_type_add_search">GetPartyPhotoFindList.aspx</string>
+    <!-- 留影墙照片列表接口 -->
+    <string name="wall_image_list">GetPartyPhotoPicList.aspx</string>
+    <!-- 留影墙上传照片接口 -->
+    <string name="wall_upload_image">UploadPartyPhotoPic.aspx</string>
+    <!-- 留影墙照片评论列表接口 -->
+    <string name="wall_comment_list">GetPartyPhotoPicCommentList.aspx</string>
+    <!-- 留影墙照片评论接口 -->
+    <string name="wall_comment">CommentPartyPhotoPic.aspx</string>
+    <!-- 留影墙创|建相册并上传照片接口 -->
+    <string name="create_photo">UploadPicAndCreatePhoto.aspx</string>
+
+    <!-- 我的待办 -->
+    <string name="my_todo_count">GetMyTaskCount.aspx</string>
+    <!-- 三会一课列表 -->
+    <string name="my_todo_list1">partywork/partywork!partyMeetingList.action</string>
+    <string name="my_sign_meeting_list">GetMeetingAttendList.aspx</string>
+    <string name="my_todo_detail">partywork/partywork!workDetails.action</string>
+    <string name="my_todo_join">MyTaskJoin.aspx</string>
+    <string name="my_todo_leave">MyTaskLeave.aspx</string>
+    <!-- 支部活动 -->
+    <string name="my_todo_list2">partywork/partywork!branchActivityList.action</string>
+    <!-- 民主生活会 -->
+    <string name="my_todo_list3">partywork/partywork!democrticLifeList.action</string>
+    <!-- 志愿者活动 -->
+    <string name="my_todo_list4">partywork/partywork!volunteerActivityList.action</string>
+
+    <!-- 会议签到 -->
+    <string name="meeting_signin">partywork/partywork!signIn.action</string>
+
+    <!-- 请假 -->
+    <string name="qingjia">partywork/partywork!askForLeave.action</string>
+    <!-- 报名 -->
+    <string name="baoming">partywork/partywork!signUp.action</string>
+
+    <!-- 查询心得 -->
+    <string name="xinde">activityTips/activityTips!tipsList.action</string>
+
+    <!-- 写心得 -->
+    <string name="xiexinde">activityTips/activityTips!saveTips.action</string>
+
+    <!-- 客户端装机设备日志记录接口 -->
+    <!-- <string name="client_install">ClientInstallLog.aspx</string> -->
+    <string name="client_install">install/install!installRecord.action</string>
+    <!-- 云学习中心 -->
+    <string name="yun_study">GetCloudStudyUrl.aspx</string>
+    <!-- 智能分析URL -->
+    <string name="getZhinengfenxiUrl">GetIntelligentReport.aspx</string>
+    <string name="zhinengfenxiURL">http://www.ith71.cn/WS/ChartView.aspx?Chart=1234&amp;BranchID=D658070EC3BF425BA8417745FDCBFCB0&amp;w=350&amp;h=250&amp;Category=</string>
+    <string name="zhinengfenxiURL2">http://www.ith71.cn/WS/ChartViewEx.aspx?Chart=1234&amp;BranchID=D658070EC3BF425BA8417745FDCBFCB0&amp;w=350&amp;h=250&amp;Category=</string>
+    <!-- 获取最新新闻图片接口 -->
+    <string name="news_image_list">GetLastNewsList.aspx</string>
+    <!-- 党务公文模版接口 -->
+    <string name="dangwgw_list">GetPartyOfficialDocument.aspx</string>
+    <!-- 政策文件版接口 -->
+    <string name="zcwj_list">GetPartyJBPolicyDocument.aspx</string>
+    <!-- 支部排名查询接口 -->
+    <string name="branch_search">GetBranchScoreRankList.aspx</string>
+    <!-- 我的支部排名查询接口 -->
+    <string name="my_branch_search">GetMyBranchScoreRankList.aspx</string>
+    <!-- 身边党史列表接口 -->
+    <string name="box_near_myself">GetPartyHistory.aspx</string>
+    <!-- 组织积分明细接口 -->
+    <string name="get_branch_integral_info">GetBranchScoreDetailList.aspx</string>
+    <!-- 群众留言列表接口 -->
+    <string name="get_message_list">GetMediaNewsList.aspx</string>
+    <!-- 群众留言详情接口 -->
+    <string name="get_message_detail">GetMediaNewsDetail.aspx</string>
+    <!-- 群众留言提交接口 -->
+    <string name="submit_message">SubmitMediaNews.aspx</string>
+
+    <!-- ==========================新接口============================== -->
+    <!-- 优秀党员评议主题列表接口 -->
+    <string name="partymemberVoteList">partymembervote/partymembervoteInterfaceAction!partymemberVoteList.action</string>
+    <!-- 优秀党员列表接口 -->
+    <string name="votePartyMemberList">partymembervote/partymembervoteInterfaceAction!votePartyMemberList.action</string>
+    <!-- 优秀党员评议投票接口 -->
+    <string name="addVoteResult">partymembervote/partymembervoteInterfaceAction!addVoteResult.action</string>
+    <!-- 优秀党员评议结果列表接口 -->
+    <string name="searchVoteResult">partymembervote/partymembervoteInterfaceAction!searchVoteResult.action</string>
+    <!-- 优秀党员信息接口 -->
+    <string name="viewPartyMember">partymembervote/partymembervoteInterfaceAction!viewPartyMember.action</string>
+
+    <!-- 民主机关评议列表接口 -->
+    <string name="office_orgVoteList">orgvote/orgvoteInterfaceAction!orgVoteList.action</string>
+    
+    <string name="office_appraisalOrgVoteList">orgvote/orgvoteInterfaceAction!appraisalOrgVoteList.action</string>
+    <!-- 民主机关评议投票接口 -->
+    <string name="office_addVoteResult">orgvote/orgvoteInterfaceAction!addVoteResult.action</string>
+    <!-- 获取民主机关评议投票内容接口 -->
+    <string name="office_getVoteContent">orgvote/orgvoteInterfaceAction!getVoteContent.action</string>
+    <!-- 意见反馈提交接口 -->
+    <string name="addSuggestion">suggestion/suggestion!addSuggestion.action</string>
+
+</resources>

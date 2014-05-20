@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="组织管理" permission="">
+        <menu name="机构管理" link="/jsp/component/systemmgr/org/orgList.jsp" permission="orgManage"/>
+        <menu name="领导班子" link="/jsp/component/basis/leader/leaderList.jsp" permission="leaderManage"/>  
+    </menu>
+</menus>

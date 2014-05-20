@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<perm code="partyworkManager" name="党务管理" model="党务管理"/>
+    <!-- 支部活动 -->
+    <perm code="branchManager" name="支部活动管理" model="支部活动管理"/>
+    <perm code="branchSearch" name="支部活动查询" model="支部活动管理"/>
+    <perm code="branchView" name="支部活动详情" model="支部活动管理"/>
+    <perm code="branchAdd" name="支部活动新增" model="支部活动管理"/>
+    <perm code="branchEdit" name="支部活动修改" model="支部活动管理"/>
+    <perm code="branchDel" name="支部活动删除" model="支部活动管理"/>
+    <!-- 
+    <perm code="branchRecommended" name="支部活动推荐" model="支部活动管理"/>
+    -->
+    <perm code="branchRecord" name="支部活动记录编辑" model="支部活动管理"/>
+    <perm code="branchPush" name="支部活动发布" model="支部活动管理"/>
+    <perm code="branchOut" name="支部活动下架" model="支部活动管理"/>
+    
+    <!-- 志愿活动 -->
+    <perm code="volunteerManager" name="志愿活动管理" model="志愿活动管理"/>
+    <perm code="volunteerSearch" name="志愿活动查询" model="志愿活动管理"/>
+    <perm code="volunteerView" name="志愿活动详情" model="志愿活动管理"/>
+    <perm code="volunteerAdd" name="志愿活动新增" model="志愿活动管理"/>
+    <perm code="volunteerEdit" name="志愿活动修改" model="志愿活动管理"/>
+    <perm code="volunteerDel" name="志愿活动删除" model="志愿活动管理"/>
+    <perm code="volunteerAudit" name="志愿活动审核" model="志愿活动管理"/>
+    <perm code="volunteerRecord" name="志愿活动记录编辑" model="志愿活动管理"/>
+    <perm code="volunteerTips" name="志愿者心语" model="志愿活动管理"/>
+    
+    <!-- 民主生活会 -->
+    <perm code="democrticlifeManager" name="民主生活会管理" model="民主生活会管理"/>
+    <perm code="democrticlifeSearch" name="民主生活会查询" model="民主生活会管理"/>
+    <perm code="democrticlifeView" name="民主生活会详情" model="民主生活会管理"/>
+    <perm code="democrticlifeAdd" name="民主生活会新增" model="民主生活会管理"/>
+    <perm code="democrticlifeEdit" name="民主生活会修改" model="民主生活会管理"/>
+    <perm code="democrticlifeDel" name="民主生活会删除" model="民主生活会管理"/>
+    <perm code="democrticlifeRecord" name="民主生活会记录编辑" model="民主生活会管理"/>
+    <perm code="democrticlifePush" name="民主生活会发布" model="民主生活会管理"/>
+    <perm code="democrticlifeOut" name="民主生活会下架" model="民主生活会管理"/>
+    <perm code="democrticlifeTips" name="民主生活会心得" model="民主生活会管理"/>
+    
+    
+    <!-- 思想汇报 -->
+    <perm code="ideologyManager" name="思想汇报管理" model="思想汇报管理"/>
+    <perm code="ideologySearch" name="思想汇报查询" model="思想汇报管理"/>
+    <perm code="ideologyView" name="思想汇报详情" model="思想汇报管理"/>
+    <perm code="ideologyEdit" name="思想汇报修改" model="思想汇报管理"/>
+    <perm code="ideologyDel" name="思想汇报删除" model="思想汇报管理"/>
+    <perm code="ideologyAudit" name="思想汇报审核" model="思想汇报管理"/>
+    
+   
+    
+</permissions>

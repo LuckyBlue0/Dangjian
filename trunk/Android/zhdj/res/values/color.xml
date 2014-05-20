@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xianqingcolor">#fff5ec</color>
+    <color name="jifencolor">#8d8d8d</color>
+    <color name="jifen_on">#ab6d07</color>
+	<color name="transparent">#00000000</color>
+	<color name="black">#080808</color>
+	<color name="white">#FFFFFF</color>
+	<color name="red">#FF0000</color>
+	<color name="list_view_bg_color">#FEF1D8</color>
+	<color name="head_menu">#AD7306</color>
+	<color name="person_info_edit_bg">#FFE4E1</color>
+	<color name="jifenpaiming_bg1">#f8f9fb</color>
+	<color name="jifenpaiming_bg2">#fff5e6</color>
+	<color name="caution_personcount">#C90100</color>
+	<color name="drak_grey">#4c4c4c</color>
+	
+	<color name="circle_1">#AB6D07</color>
+	<color name="circle_2">#8D8D8D</color>
+	
+	<color name="xnull">@null</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="contents_text">#ff000000</color>
+	
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c000ff00</color>
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="proof_detail_price">#e1d0a4</color>
+	<color name="possible_result_points">#c0ffff00</color>
+
+	<color name="list_item_focus">#FFFFFF</color> 
+</resources>

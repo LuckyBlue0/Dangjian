@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="三会一课" permission="partyworkManager">
+        <menu name="会议管理" permission="meetingManager" link="/jsp/component/partywork/shyk/meeting/list.jsp"/>
+        <menu name="党课管理" permission="dangkeManager" link="/jsp/component/partywork/shyk/partylecture/list.jsp"/>
+    </menu>
+</menus>

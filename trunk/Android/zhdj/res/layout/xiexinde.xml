@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 背景图片 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_below="@+id/headLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/body_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/wenben_title"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/wenben" >
+
+            <EditText
+                android:id="@+id/editxinde"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/tishi"
+                android:background="@null"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:textSize="18dp"
+                android:hint="输入心得体会" />
+
+            <TextView
+                android:id="@+id/tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:textSize="28px"
+                android:textColor="@color/black"
+                android:text="不少于70字" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

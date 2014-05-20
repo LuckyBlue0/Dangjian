@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+    <!--
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/list_view"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="2dp" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/ziaxianzixun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_default_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/minyidiaocha"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="在线咨询" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_default_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="民意调查" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_default_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="找党代表" />
+    </RelativeLayout>
+
+</LinearLayout> <!-- <RelativeLayout -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_gravity="center_vertical" -->
+<!-- android:background="@drawable/branch_search_bg" -->
+<!-- android:gravity="center_vertical" -->
+<!-- android:padding="8dp" > -->
+
+
+<!-- <EditText -->
+<!-- android:id="@+id/keyword" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:background="@drawable/branch_search" -->
+<!-- android:hint="输入标题，发起人" -->
+<!-- android:paddingLeft="10dp" -->
+<!-- android:paddingRight="30dp" -->
+<!-- android:singleLine="true" -->
+<!-- android:textColor="#4c4c4c" -->
+<!-- android:textSize="15sp" /> -->
+
+
+<!-- <ImageButton -->
+<!-- android:id="@+id/searchbtn" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_alignParentRight="true" -->
+<!-- android:layout_centerVertical="true" -->
+<!-- android:layout_marginRight="10dp" -->
+<!-- android:background="@drawable/branch_search_btn" /> -->
+<!-- </RelativeLayout> -->
+

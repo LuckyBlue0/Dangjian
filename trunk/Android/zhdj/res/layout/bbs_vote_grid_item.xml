@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_person_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vote_person_bg"
+    android:orientation="vertical"
+    android:padding="1dp" >
+
+    <FrameLayout
+        android:id="@+id/person_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingBottom="1dp" >
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/user_img_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+            android:background="@drawable/vote_person_selected2"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/user_img_voteover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="3dp"
+            android:background="@drawable/voteover_img"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="张三"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</LinearLayout>

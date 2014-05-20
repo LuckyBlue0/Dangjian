@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7DC71853-97AD-49AA-8CDE-C13A10766AE4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZHDangJian</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CB2C4E7-F456-4655-B9C2-AFD774CD04E7</key>
+		<string>https://192.168.1.12:7000/svn/2013%E5%B9%B4%E5%85%9A%E5%BB%BA%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E9%A1%B9%E7%9B%AE%E5%86%85%E9%83%A8</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/iPhone/ZHDangJian/ZHDangJian/ZHDangJian.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CB2C4E7-F456-4655-B9C2-AFD774CD04E7</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>7CB2C4E7-F456-4655-B9C2-AFD774CD04E7</key>
+		<string>https://192.168.1.12:7000/svn/2013%E5%B9%B4%E5%85%9A%E5%BB%BA%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E9%A1%B9%E7%9B%AE%E5%86%85%E9%83%A8</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.12:7000/svn/2013%E5%B9%B4%E5%85%9A%E5%BB%BA%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E9%A1%B9%E7%9B%AE%E5%86%85%E9%83%A8/trunk/iPhone/ZHDangJian/ZHDangJian/ZHDangJian.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CB2C4E7-F456-4655-B9C2-AFD774CD04E7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CB2C4E7-F456-4655-B9C2-AFD774CD04E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>2013年党建产品研发项目内部</string>
+		</dict>
+	</array>
+</dict>
+</plist>

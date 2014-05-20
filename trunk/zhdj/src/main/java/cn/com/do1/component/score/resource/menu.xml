@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu name="积分管理" permission="scoreManager" icon="/themes/default/css/images/news/i16.png">
+		<menu name="个人积分" permission="partyDevelopmentManager"
+			link="/jsp/component/score/personalscore/list.jsp" />
+		<menu name="组织积分" permission="partyDevelopmentManager"
+			link="/jsp/component/score/orgscore/list.jsp" />
+		<menu name="积分规则管理" permission="scoreRuleManager"
+			link="/jsp/component/score/scorerule/ruleList.jsp" />
+		<menu name="积分星级管理" permission="scoreLeaveManager"
+			link="/jsp/component/score/scoreLeave/list.jsp" />
+	</menu>
+</menus>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="mobileclient.installrecord" namespace="/installrecord" extends="dqdp-default">
+        <action name="installRecordAction" class="cn.com.do1.component.mobileclient.installrecord.ui.InstallRecordAction">
+        </action>
+        </package>
+        
+        <package name="mobileclient.installrecord.interface" namespace="/interface/install" extends="dqdp-default">
+        <action name="install" class="cn.com.do1.component.mobileclient.installrecord.client.InstallRecordInterfaceAction">
+        </action>
+        </package>
+</struts>

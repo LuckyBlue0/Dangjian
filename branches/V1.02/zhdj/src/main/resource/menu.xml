@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menus> 
+  <menu independently="false" ref="news" name="news" permission="newsManager"/>  
+  <menu independently="false" ref="basis" name="basis" permission="basisManager"/> 
+  <menu independently="false" ref="relation" name="relation" permission="orgRelationManager"/>  
+  <menu independently="false" ref="leader" name="组织管理" permission="orgManage" icon="/themes/default/css/images/news/i19.png"/>  
+  <menu independently="false" ref="partywork" name="partywork" permission="partyworkManager"/>  
+  <menu independently="false" ref="data" name="data" permission="dataManager" icon="/themes/default/css/images/news/i18.png"/>  
+  <menu independently="false" ref="vote" name="vote" permission="voteManage"/>  
+  <menu independently="false" ref="score" name="score" permission="scoreManager"/>  
+  <menu independently="false" ref="mobileclient" name="mobileclient"/>  
+  <menu independently="false" ref="report" name="report"/>
+  <menu independently="false" ref="photowall" name="photowall" permission="photowallList" icon="/themes/default/css/images/i12.png"/>   
+  <menu name="系统管理" permission="systemManage" icon="/themes/default/css/images/i12.png"> 
+    <menu name="用户管理" link="/jsp/component/systemmgr/user2/userList.jsp" permission="userManage"/>  
+    <menu name="角色管理" link="/jsp/component/systemmgr/role2/roleList.jsp" permission="roleManage"/>  
+    <menu name="权限管理" link="/jsp/component/systemmgr/qywpermission/permissionList.jsp" permission="permissionManage"/>  
+    <menu name="配置管理" link="/jsp/component/dqdpconfig/config_list.jsp"/>  
+    <menu independently="false" ref="dqdpdictionary" name="字典管理"/>  
+    <menu independently="false" ref="dqdploger" name="日志管理"/>  
+    <menu link="/jsp/component/systemmgr/keyword/keywordList.jsp" name="关键字管理"/>  
+    <menu link="/jsp/component/systemmgr/sessionmgr/sessionmgrList.jsp" name="会话管理"/>  
+    <menu name="新闻类型管理" permission="newsTypeManager" link="/jsp/component/basis/newstype/list.jsp"/>  
+    <menu independently="false" ref="schedule" name="任务管理" icon="/themes/default/images/menu/icon13.png"/> 
+  </menu>  
+</menus>

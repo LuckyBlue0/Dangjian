@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <interface
+        id="getMyCircleList"
+        bundler="cn.com.do1.dqdp.android.data.JSONBundler"
+        common="圈子列表"
+        method="post"
+        parser="com.do1.thzhd.activity.circle.parser.CircleListParser"
+        path="@string/getMyCircleList"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="createCircle"
+        common="创建圈子"
+        method="post"
+        parser="com.do1.thzhd.activity.common.ZhdjBaseDataParser"
+        path="@string/createCircle"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="createTag"
+        common="创建标签"
+        method="post"
+        parser="com.do1.thzhd.activity.common.ZhdjBaseDataParser"
+        path="@string/createTag"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="getTagList"
+        common="标签列表"
+        method="post"
+        parser="com.do1.thzhd.activity.circle.parser.CirclePageParser"
+        path="@string/getTagList"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="getJoinCircleList"
+        common="获取所有圈子用于加入圈子"
+        method="post"
+        parser="com.do1.thzhd.activity.circle.parser.CirclePageParser"
+        path="@string/getAllCircleList"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="myActivityList"
+        common="我的活动列表"
+        method="post"
+        parser="com.do1.thzhd.activity.circle.parser.CirclePageParser"
+        path="@string/getMyActivityAbleList"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="joinCircle"
+        common="加入圈子"
+        method="post"
+        parser="com.do1.thzhd.activity.common.ZhdjBaseDataParser"
+        path="@string/applyJoinCircle"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+    <interface
+        id="doVote"
+        common="投票"
+        method="post"
+        parser="com.do1.thzhd.activity.common.ZhdjBaseDataParser"
+        path="@string/tagVote"
+        postTxt="true"
+        sendProvider="com.do1.thzhd.activity.common.HttpSendProvider"
+        target="@string/server_url"
+        type="http" />
+
+</resources>

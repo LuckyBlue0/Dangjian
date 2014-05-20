@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notice_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/author_"
+                style="@style/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者：" />
+
+            <TextView
+                android:id="@+id/author"
+                style="@style/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/author_"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_l_680x250" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/notice_line"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/notice_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看全文" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sendTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/one"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/dialog"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="2dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text=""
+        android:textColor="#8d8d8d"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/isTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bbs_office_topbg2"
+        android:visibility="gone" />
+
+</RelativeLayout>

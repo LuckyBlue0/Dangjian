@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<perm code="scoreManager" name="积分管理" model="积分管理" />
+
+	<perm code="personalScoreManager" name="个人积分管理" model="积分管理" />
+	<perm code="personalScoreSearch" name="个人积分查询" model="积分管理" />
+	<perm code="personalScoreView" name="个人积分详情" model="积分管理" />
+	<perm code="personalScoreExport" name="个人积分导出" model="积分管理" />
+	<perm code="personalScoreEdit" name="个人积分修改" model="积分管理" />
+
+	<perm code="orgScoreManager" name="组织积分管理" model="积分管理" />
+	<perm code="orgScoreSearch" name="组织积分查询" model="积分管理" />
+	<perm code="orgScoreView" name="组织积分详情" model="积分管理" />
+	<perm code="orgScoreExport" name="组织积分导出" model="积分管理" />
+	<perm code="orgScoreEdit" name="组织积分修改" model="积分管理" />
+	
+	<perm code="scoreRuleManager" name="积分规则管理" model="积分管理" />
+	<perm code="scoreRuleSearch" name="积分规则查询" model="积分管理" />
+	<perm code="scoreRuleView" name="积分规则详情" model="积分管理" />
+	<perm code="scoreRuleExport" name="积分规则导出" model="积分管理" />
+	<perm code="scoreRuleEdit" name="积分规则修改" model="积分管理" />
+	
+	<perm code="scoreLeaveManager" name="积分星级管理" model="积分管理" />
+	<perm code="scoreLeaveSearch" name="积分星级查询" model="积分管理" />
+	<perm code="scoreLeaveView" name="积分星级详情" model="积分管理" />
+	<perm code="scoreLeaveExport" name="积分星级导出" model="积分管理" />
+	<perm code="scoreLeaveEdit" name="积分星级修改" model="积分管理" />
+	<perm code="scoreLeaveDel" name="积分星级删除" model="积分管理" />
+</permissions>

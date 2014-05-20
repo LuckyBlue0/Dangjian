@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="民主评议" permission="voteManage" icon="/themes/default/css/images/news/i17.png">
+        <menu name="机关民主评议" link="/jsp/component/vote/orgVote/orgVoteList.jsp" permission="orgVoteManage"/>
+        <menu name="优秀党员评议" link="/jsp/component/vote/partymemberVote/partymemberVoteList.jsp" permission="partymemberVoteManage"/> 
+    </menu>
+</menus>

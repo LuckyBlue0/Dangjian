@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/more_ideaback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="left|top"
+            android:hint="您的建议，是我们持续动力！"
+            android:lines="14"
+            android:padding="10dp"
+            android:textColor="#4D4D4D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_size"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/more_ideaback"
+            android:layout_alignRight="@+id/more_ideaback"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/text_status"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignBottom="@+id/more_ideaback"
+            android:layout_alignRight="@+id/more_ideaback"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/clean" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/more_submitphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"
+        android:hint="输入您的联系方式（手机号或邮箱）"
+        android:lines="1"
+        android:padding="10dp"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp" />
+
+</LinearLayout>

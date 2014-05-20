@@ -1,0 +1,122 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                    http://www.springframework.org/schema/security
+                    http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    <!--表达式 说明-->
+    <!--hasRole([role]) 返回 true 如果当前主体拥有特定角色。-->
+    <!--hasAnyRole([role1,role2]) 返回 true 如果当前主体拥有任何一个提供的角色 （使用逗号分隔的字符串队列）-->
+    <!--principal 允许直接访问主体对象，表示当前用户-->
+    <!--authentication 允许直接访问当前 Authentication对象 从SecurityContext中获得-->
+    <!--permitAll 一直返回true-->
+    <!--denyAll 一直返回false-->
+    <!--isAnonymous() 如果用户是一个匿名登录的用户 就会返回 true--> 
+    <!--isRememberMe() 如果用户是通过remember-me 登录的用户 就会返回 true-->
+    <!--isAuthenticated() 如果用户不是匿名用户就会返回true-->
+    <!--isFullyAuthenticated() 如果用户不是通过匿名也不是通过remember-me登录的用户时， 就会返回true。-->
+    <http pattern="/padinterface/**" security="none"/>
+    <http pattern="/interface/**" security="none"/> 
+    <http pattern="/jsp/mobileclient/view.jsp" security="none"/>
+    <http pattern="/**/*.js" security="none"/>
+    <http pattern="/**/*.png" security="none"/>
+    <http pattern="/**/*.css" security="none"/>
+    <http pattern="/**/*.jpg" security="none"/>
+    <http pattern="/**/*.gif" security="none"/>
+    <http pattern="/jsp/web/**/*.jsp" security="none" />
+    <http pattern="/jsp/web/*.jsp" security="none" />
+    <http pattern="/index/indexAction!**" security="none" />
+    <http pattern="/orgIndex/orgIndexAction!**" security="none" /> 
+    <http pattern="/orgManage/orgManageAction!fileUpload.action" security="none" />
+    <http pattern="/membercenter/membercenterAction!**" security="none" />
+    <http pattern="/meeting/dangkeAction!ajaxView.action" security="none" />
+    <http pattern="/meeting/meetingAction!ajaxView.action" security="none" />
+    <http pattern="/meeting/dangkeAction!ajaxUser.action" security="none" />
+    <http pattern="/branch/branchAction!ajaxView.action" security="none" />
+    <http pattern="/branch/branchAction!ajaxUser.action" security="none" />
+    <http pattern="/version/versionAction!downLoadFile.action" security="none" />
+    <http pattern="/interface/indexshow/indexshowInterfaceAction**" security="none" />
+    <http pattern="/interface/sharemanager/shareAction**" security="none" /> 
+    <http pattern="/interface/partywork/partywork**" security="none" /> 
+    <http pattern="/encrypt.servlet" security="none"/>
+     <http pattern="/postinfo/allReplyInfo.action" security="none"/>
+      <http pattern="/qnh/postInfo/allReply.jsp" security="none"/>
+      <http pattern="/postinfo/*" security="none"/>
+    <!--<http pattern="/jsp/default/login/login_in.jsp*" security="none" />-->
+    <http use-expressions="true" entry-point-ref="authenticationProcessingFilterEntryPoint">
+        <custom-filter position="FIRST" ref="httpsCookieFilter"/> 
+        <custom-filter ref="loginFilter" position="FORM_LOGIN_FILTER"/>
+        <custom-filter ref="customValidFilter" before="FORM_LOGIN_FILTER"/>
+        <custom-filter ref="sessionFilter" after="FORM_LOGIN_FILTER"/>
+        <custom-filter ref="concurrentSessionFilter" position="CONCURRENT_SESSION_FILTER"/>
+        <intercept-url pattern="/**/jsp/default/login/login_in.jsp*" access="permitAll" requires-channel="http"/>
+        <intercept-url pattern="/**/user/user!changePasswordBySelf.action" access="isFullyAuthenticated()" requires-channel="http"/>
+        <intercept-url pattern="/**/j_spring_security_check" access="permitAll" requires-channel="http"/>
+        <intercept-url pattern="/**/j_spring_security_logout" requires-channel="http"/>
+        <intercept-url pattern="/**/*.jsp*" access="hasRole('ROLE_user')" requires-channel="http"/>
+        <intercept-url pattern="/**/*.action*" access="hasRole('ROLE_user')" requires-channel="http"/>
+        <intercept-url pattern="/**/*.do*" access="hasRole('ROLE_user')" requires-channel="http"/>
+        <logout logout-url="/j_spring_security_logout" logout-success-url="/jsp/default/login/login_in.jsp" delete-cookies="true"/>
+        <session-management session-authentication-strategy-ref="sas1"/>
+        <port-mappings>
+            <port-mapping http="8080" https="8443"/>
+        </port-mappings>
+        <remember-me user-service-ref="dqdpSecurityService"/>
+    </http>
+
+    <global-method-security secured-annotations="enabled" jsr250-annotations="enabled"/>
+
+    <beans:bean id="authenticationProcessingFilterEntryPoint" class="cn.com.do1.dqdp.core.permission.AjaxAwareAuthenticationEntryPoint">
+        <beans:constructor-arg type="java.lang.String" value="/jsp/default/login/login_in.jsp"/>
+        <!--<beans:property name="forceHttps" value="true"/>-->
+        <!--<beans:property name="useForward" value="true"/>-->
+
+    </beans:bean>
+    <beans:bean id="sas" class="org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy">
+        <beans:property name="migrateSessionAttributes" value="true"/>
+    </beans:bean>
+    <beans:bean id="sas1" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy">
+        <beans:constructor-arg name="sessionRegistry" ref="sessionRegistry"/>
+        <beans:property name="maximumSessions" value="-1"/>
+        <beans:property name="exceptionIfMaximumExceeded" value="true"/>
+        <beans:property name="alwaysCreateSession" value="true"/>
+        <!--<beans:property name="alwaysCreateSession" value="false"/>-->
+    </beans:bean>
+    <beans:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl"/>
+    <beans:bean id="concurrentSessionFilter" class="cn.com.do1.dqdp.core.permission.DqdpConcurrentSessionFilter">
+        <beans:constructor-arg type="org.springframework.security.core.session.SessionRegistry" ref="sessionRegistry"/>
+        <!--<beans:property name="sessionRegistry" ref="sessionRegistry"/>-->
+    </beans:bean>
+
+    <beans:bean id="customValidFilter" class="cn.com.do1.dqdp.core.permission.DqdpSecurityFilter"/>
+    <beans:bean id="sessionFilter" class="cn.com.do1.dqdp.core.permission.DqdpSessionFilter"/>
+
+    <beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder"/>
+    <beans:bean id="loginFilter" scope="singleton" class="cn.com.do1.dqdp.core.permission.LoginFilter">
+        <beans:property name="filterProcessesUrl" value="/j_spring_security_check"/>
+        <!--&lt;!&ndash; 验证成功后的处理&ndash;&gt;-->
+        <beans:property name="authenticationSuccessHandler" ref="loginLogAuthenticationSuccessHandler"/>
+        <!--&lt;!&ndash; 验证失败后的处理&ndash;&gt;-->
+        <beans:property name="authenticationFailureHandler" ref="simpleUrlAuthenticationFailureHandler"/>
+        <beans:property name="authenticationManager" ref="authenticationManager"/>
+        <beans:property name="sessionAuthenticationStrategy" ref="sas1"/>
+        <beans:property name="postOnly" value="true"/><!--postOnly参数,只允许在整合单点登录的时候才有效,否则系统一律只允许POST响应登录请求-->
+    </beans:bean>
+    <beans:bean id="loginLogAuthenticationSuccessHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+        <beans:property name="defaultTargetUrl" value="/jsp/default/login/login_result_success.jsp"/>
+    </beans:bean>
+    <beans:bean id="simpleUrlAuthenticationFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+        <!-- 可以配置相应的跳转方式。属性forwardToDestination为true采用forward false为sendRedirect -->
+        <beans:property name="defaultFailureUrl" value="/jsp/default/login/login_result_fail.jsp"/>
+    </beans:bean>
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="dqdpSecurityService">
+            <password-encoder ref="passwordEncoder" hash="md5"/>
+        </authentication-provider>
+    </authentication-manager>
+
+    <beans:bean id="httpsCookieFilter" class="cn.com.do1.common.framebase.security.HttpsCookieFilter">
+        <beans:property name="sessionToken" value="JSESSIONID"/>
+    </beans:bean>
+</beans:beans>

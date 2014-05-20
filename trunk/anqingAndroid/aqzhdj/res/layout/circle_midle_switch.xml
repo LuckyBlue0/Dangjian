@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/circle_midle_bg"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_circle_switch_on"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/circle_midle_on"
+            android:textSize="16sp"
+            android:textColor="#AB6D07"
+            android:text="我的群组" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/btn_circle_switch_off"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColor="#8D8D8D"
+            android:text="我的活动" />
+    </LinearLayout>
+
+</RelativeLayout>

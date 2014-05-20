@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<perm code="orgRelationManager" name="组织关系" model="组织关系" />
+
+	<perm code="orgRelationOutAudit" name="关系转出审核" model="组织关系" />
+	<perm code="orgRelationOutSearch" name="关系转出查询" model="组织关系" />
+	<perm code="orgRelationIntoAudit" name="关系转入审核" model="组织关系" />
+	<perm code="orgRelationIntoAudit" name="关系转入查询" model="组织关系" />
+</permissions>

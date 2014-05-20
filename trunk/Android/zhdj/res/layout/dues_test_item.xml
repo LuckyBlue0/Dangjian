@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="#4c4c4c"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/saveIds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!--
+    <RadioGroup
+        android:id="@+id/radioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="-16dp" >
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text="11111"
+            android:textColor="#8d8d8d" />
+
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text="2222"
+            android:textColor="#8d8d8d" />
+
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text="2222"
+            android:textColor="#8d8d8d" />
+
+        <RadioButton
+            android:id="@+id/radioBtn4"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text="2222"
+            android:textColor="#8d8d8d" />
+    </RadioGroup>
+
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+
+        <CheckBox
+            android:id="@+id/checkbox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#8d8d8d" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/notice_line" />
+
+</LinearLayout>

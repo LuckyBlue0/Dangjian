@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/frame_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/frame_mid"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitXY" 
+                android:padding="4dp"
+                android:background="@drawable/new_mine_logo" />
+
+            <LinearLayout
+                android:id="@+id/linearmidle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/image"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/memberIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dues_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="李四"
+                        android:textColor="#4c4c4c"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/baoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bt_lv"
+                android:text="报名"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_line1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="李四"
+                android:textColor="#4c4c4c"
+                android:textSize="18sp" />
+
+           <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在圈子:"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activityCircleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </LinearLayout>--> 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点："
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activityAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间："
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activityTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动规则："
+                android:textColor="#4c4c4c"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/activityGuize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#8d8d8d"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_line1" />
+
+            <RelativeLayout
+                android:id="@+id/toActivityList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/baomingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#AB6D07"
+                    android:textSize="15sp"
+                    android:text="111111111111111" />
+
+                <TextView
+                    android:id="@+id/activityGuize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/frame_bottom" />
+
+</LinearLayout>

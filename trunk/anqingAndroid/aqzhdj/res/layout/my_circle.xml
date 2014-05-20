@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headLayout"
+        android:background="@drawable/circle_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/circle_midle_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btMyCircle"
+                style="@style/btn_circle_switch_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_midle_on"
+                android:text="留言区"
+                android:textColor="#AB6D07"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btMyActivity"
+                style="@style/btn_circle_switch_off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="活动区"
+                android:textColor="#8D8D8D"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Gallery
+        android:id="@+id/guanggao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:padding="0dp"/>
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/list_view_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/guanggao" />
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/list"
+        android:gravity="center"
+        android:text="暂无数据!"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/request_bg"  >
+
+        <RelativeLayout
+            android:id="@+id/buttom1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/request"
+                style="@style/mine_style2"
+                android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_issue"
+                android:gravity="center"
+                android:text="发布" 
+                android:textColor="#4c4c4c"/>
+            
+            <EditText
+                android:id="@+id/edit_request"
+                android:layout_toLeftOf="@id/request"
+                android:layout_centerVertical="true"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/comm_edittext"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:hint="说些什么吧"
+	            android:singleLine="true" />
+                
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            
+            >
+        
+	        <ImageView
+	            android:id="@+id/buttom2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/bt_activity_add"
+	            android:visibility="gone" />
+        
+		</RelativeLayout>
+        <!-- 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2.5dp"
+            android:paddingBottom="2.5dp" >
+            
+            <Button
+	            android:id="@+id/buttom2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="+ 发布活动"
+	            style="@style/mine_style"
+	            android:visibility="gone" />
+            
+        </RelativeLayout>
+		 -->
+        <!-- 
+        <Button
+            android:id="@+id/buttom2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="+ 发布活动"
+            android:textColor="#646464"
+            android:textSize="18sp"
+            android:visibility="gone" />
+         -->
+    </RelativeLayout>
+
+</RelativeLayout>

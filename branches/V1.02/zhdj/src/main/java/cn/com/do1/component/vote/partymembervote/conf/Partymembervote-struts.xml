@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="vote.partymembervote" namespace="/partymembervote" extends="dqdp-default">
+        <action name="partymembervoteAction" class="cn.com.do1.component.vote.partymembervote.ui.PartymembervoteAction">
+        <result name="addPartymember">/jsp/component/vote/partymemberVote/partymemberAdd.jsp</result>
+        <result name="editPartymember">/jsp/component/vote/partymemberVote/partymemberEdit.jsp</result>
+        </action>
+    </package>
+    <package name="mobileclient.partymembervote.interface" namespace="/interface/partymembervote" extends="dqdp-default">
+        <action name="partymembervoteInterfaceAction" class="cn.com.do1.component.vote.partymembervote.client.PartymembervoteInterfaceAction">
+        </action>
+        </package>
+</struts>

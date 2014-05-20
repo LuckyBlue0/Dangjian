@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="新闻管理" permission="newsManager" icon="/themes/default/css/images/i5.png">
+    	<menu name="热点新闻" link="/jsp/component/news/hotnewsinfo/list.jsp"/>
+        <menu name="通知公告" link="/jsp/component/news/newsinfo/list.jsp?type=1"/>
+        <menu name="工作动态" link="/jsp/component/news/newsinfo/list.jsp?type=2"/>
+        <menu name="组织风采" link="/jsp/component/news/tissuemien/list.jsp"/>
+    </menu>
+</menus>

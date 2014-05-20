@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/notice_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/voteTopic"
+            style="@style/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:text="关于组织参加BFT考试的通知" />
+
+        <ImageView
+            android:id="@+id/voteImg"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/index_default"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="活动规则"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="1.每人有3个投票名额，不可以重复投票"
+            android:textColor="#8d8d8d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="活动时间"
+            android:textColor="#4c4c4c"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="13dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="开始时间:"
+                    android:textColor="#8d8d8d" />
+
+                <TextView
+                    android:id="@+id/tv_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="#8d8d8d" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="结束时间:"
+                    android:textColor="#8d8d8d" />
+
+                <TextView
+                    android:id="@+id/tv_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="#8d8d8d" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vote_btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vote_list_btn_confirm"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马上评选投票("
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/totalCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#D4250C"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人参与)"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

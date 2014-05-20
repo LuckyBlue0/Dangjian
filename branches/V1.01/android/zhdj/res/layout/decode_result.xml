@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout" >
+
+        <LinearLayout
+            android:id="@+id/result_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_top"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame_mid"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp" >
+
+                <ImageView
+                    android:id="@+id/barcode_image_viewe"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/contents_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:textColorLink="#000000"
+                    android:textSize="18sp" />
+                <!-- urlend -->
+            </LinearLayout>
+
+            <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"
+            android:text=""
+            android:textColor="@color/black" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_bottom"
+                android:scaleType="fitXY" />
+            
+             <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mytodo_join"
+            android:gravity="center"
+            android:text="马上签到"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnScreenAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_mytodo_leave"
+            android:gravity="center"
+            android:text="重新扫描"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

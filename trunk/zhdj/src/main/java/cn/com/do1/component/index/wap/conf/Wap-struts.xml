@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="index.wap" namespace="/wap" extends="dqdp-default">
+        <action name="wapAction" class="cn.com.do1.component.index.wap.ui.WapAction">
+        <result name="index">/jsp/wap/index.jsp</result>
+        <result name="list">/jsp/wap/newsList.jsp</result>
+        <result name="detail">/jsp/wap/newsDetail.jsp</result>
+        <result name="newsTypeList">/jsp/wap/newsTypeList.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="组织生活" permission="partyworkManager" icon="/themes/default/css/images/i6.png">
+        <menu independently="false" ref="shyk" name="三会一课" permission="partyworkManager"/>
+        <menu name="支部活动" permission="branchManager" link="/jsp/component/partywork/zbhd/list.jsp"/>
+        <menu name="民主生活会" permission="democrticlifeManager" link="/jsp/component/partywork/mzshh/list.jsp"/>
+        <menu name="志愿活动" permission="volunteerManager" link="/jsp/component/partywork/zyhd/list.jsp"/>
+        <!-- <menu name="思想汇报" permission="ideologyManager" link="/jsp/component/partywork/sxhb/list.jsp"/> -->
+        
+    </menu>
+</menus>

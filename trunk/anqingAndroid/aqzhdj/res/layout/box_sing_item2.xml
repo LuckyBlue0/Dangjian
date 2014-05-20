@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_default_bg" >
+
+    <TextView
+        android:id="@+id/image"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_head_4"
+        android:text="预    览"
+        style="@style/btn_text" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/mine_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/image"
+        android:text="通知公告" />
+
+</RelativeLayout>

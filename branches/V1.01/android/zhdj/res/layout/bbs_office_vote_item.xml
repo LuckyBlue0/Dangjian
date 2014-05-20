@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_voteOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingRight="70dp"
+        android:singleLine="true"
+        android:text="南山党政机关"
+        android:textColor="#4D4D4D"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/voteStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/arrow"
+        android:text="已评议"
+        android:textColor="#4C4C4C"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

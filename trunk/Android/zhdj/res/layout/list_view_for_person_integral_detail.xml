@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLayout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tabOne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff5e4"
+            style="@style/mine_style"
+            android:padding="10dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ededed"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="动态信息" />
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="获积分" />
+
+            <TextView
+                style="@style/tab_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="日期" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/headLayout"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

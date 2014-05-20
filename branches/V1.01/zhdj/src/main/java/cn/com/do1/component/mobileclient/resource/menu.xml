@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+    <menu name="手机客户端" permission="" icon="/themes/default/css/images/i10.png">
+        <menu name="版本管理" link="/jsp/component/mobileclient/version/versionList.jsp" permission="versionManage"/>
+        <menu name="安装记录" link="/jsp/component/mobileclient/installRecord/installRecordList.jsp" permission="installManage"/>
+        <menu name="意见管理" link="/jsp/component/mobileclient/suggestion/suggestionList.jsp" permission="suggestionManage"/>
+    </menu>
+</menus>

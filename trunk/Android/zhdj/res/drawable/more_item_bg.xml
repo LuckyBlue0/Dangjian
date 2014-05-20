@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- http://www.linuxidc.com/Linux/2011-10/46238.htm -->
+    <!-- <padding>是为内容或子标签设置边距，4个属性top、bottom、left、right，需要注意的是这个标签的作用是为内容设置与当前应用此shape的View的边距，而不是设置当前View与父元素的边距。 -->
+    <!-- size就不用说了，设置背景大小，width和height俩属性。 -->
+    <!-- 设置整个背景的颜色 -->
+    
+    
+    <solid android:color="#FFFFFF" />
+    <!-- 边框 -->
+    <stroke
+        android:width="0.8dp"
+        android:color="#C7C1B8" />
+    <corners android:radius="8dp"/>
+
+</shape>

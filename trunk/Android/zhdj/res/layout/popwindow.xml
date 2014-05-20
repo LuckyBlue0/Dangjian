@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 背景图片 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/tanchu" >
+
+        <TextView
+            android:id="@+id/all"
+            android:visibility="gone"
+            style="@style/mine_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:text="全部" />
+
+        <ImageView
+            android:id="@+id/popline"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/all"
+            android:background="@drawable/popline" />
+
+        <TextView
+            android:id="@+id/mymetting"
+            style="@style/mine_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popline"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:text="我的会议" />
+
+        <ImageView
+            android:id="@+id/popline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mymetting"
+            android:background="@drawable/popline" />
+
+        <TextView
+            android:id="@+id/dangke"
+            style="@style/mine_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popline2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:textSize="15sp"
+            android:text="我的党课" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

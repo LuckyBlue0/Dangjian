@@ -1,0 +1,19 @@
+工程目录
+
+1、Extension：放置第三方库和Marco
+
+2、Model：
+		HttpRequest：http请求
+		DataModule：元数据模型
+		DataParse：数据解析
+
+3、ViewController：MVC中的VC
+		View：共用的控件、页面
+		FunctionVC：分模块
+				Boot：启动页面
+				First：首页
+
+4、Resource：放置图片、配置文件plist
+		Image
+				Public：共用图片
+				Icon

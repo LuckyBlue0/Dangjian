@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="pushnotification.pushnotification" namespace="/pushnotification" extends="push-default">
+        <action name="pushnotificationAction" class="cn.com.do1.component.pushnotification.pushnotification.ui.PushnotificationAction">
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_top" >
+
+                <TextView
+                    android:id="@+id/circleNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="群名称"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/circleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/circleNameText"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="群名称"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_center" >
+
+                <TextView
+                    android:id="@+id/circleOwn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="群主"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ownName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/circleOwn"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_center" >
+
+                <TextView
+                    android:id="@+id/circleTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="所属标签"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/circleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/circleTitleText"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="所属标签"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_bottom" >
+
+                <TextView
+                    android:id="@+id/circleContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="群简介"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/circleContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/circleContentText"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="群简介"
+                    android:textColor="#8d8d8d"
+                    android:textSize="15sp" />
+
+                <!-- <HorizontalScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp" >
+                </HorizontalScrollView> -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkCircleMember"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle_simple" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="查看群成员"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circleActivityCount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle_simple" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="群活动统计"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/suppal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle_simple" >
+
+                <TextView
+                    android:id="@+id/supportCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="申请审核"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/arrow" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/quite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/bt_quite"
+                android:text="解散该群"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

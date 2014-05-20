@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/body_bg">
+    
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notice_item_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dangzhangLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/layout_padding" >
+
+            <TextView
+                style="@style/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="党章" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <RelativeLayout
+            android:id="@+id/danghuiLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/layout_padding" >
+
+            <TextView
+                style="@style/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="党徽" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_line" />
+
+        <RelativeLayout
+            android:id="@+id/dangqiLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/layout_padding" >
+
+            <TextView
+                style="@style/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="党旗" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

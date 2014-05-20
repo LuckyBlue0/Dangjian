@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="newsManager" name="新闻管理" model="新闻管理"/>
+    <perm code="newsSearch" name="新闻查询" model="新闻管理"/>
+    <perm code="newsView" name="新闻详情" model="新闻管理"/>
+    <perm code="newsAdd" name="新闻新增" model="新闻管理"/>
+    <perm code="newsEdit" name="新闻修改" model="新闻管理"/>
+    <perm code="newsDel" name="新闻删除" model="新闻管理"/>
+    <perm code="newsOut" name="新闻下架" model="新闻管理"/>
+    <perm code="newsTop" name="新闻置顶" model="新闻管理"/>
+    <perm code="newsPush" name="新闻发布" model="新闻管理"/>
+    
+    <!-- 
+    <perm code="noticeAfficheManager" name="通知公告管理" model="新闻管理"/>
+    <perm code="noticeAfficheSearch" name="通知公告查询" model="新闻管理"/>
+    <perm code="noticeAfficheView" name="通知公告详情" model="新闻管理"/>
+    <perm code="noticeAfficheAdd" name="通知公告新增" model="新闻管理"/>
+    <perm code="noticeAfficheEdit" name="通知公告修改" model="新闻管理"/>
+    <perm code="noticeAfficheDel" name="通知公告删除" model="新闻管理"/>
+    
+    <perm code="workDynamicManager" name="工作动态管理" model="新闻管理"/>
+    <perm code="workDynamicheSearch" name="工作动态查询" model="新闻管理"/>
+    <perm code="workDynamicheView" name="工作动态详情" model="新闻管理"/>
+    <perm code="workDynamicheAdd" name="工作动态新增" model="新闻管理"/>
+    <perm code="workDynamicheEdit" name="工作动态修改" model="新闻管理"/>
+    <perm code="workDynamicheDel" name="工作动态删除" model="新闻管理"/>
+     -->
+     
+    <perm code="hotNewsManager" name="热点新闻管理" model="新闻管理"/>
+    <perm code="hotNewsSearch" name="热点新闻查询" model="新闻管理"/>
+    <perm code="hotNewsView" name="热点新闻详情" model="新闻管理"/>
+    <perm code="hotNewsAdd" name="热点新闻新增" model="新闻管理"/>
+    <perm code="hotNewsEdit" name="热点新闻修改" model="新闻管理"/>
+    <perm code="hotNewsDel" name="热点新闻删除" model="新闻管理"/>
+    <perm code="hotNewsOut" name="热点新闻下架" model="新闻管理"/>
+    <perm code="hotNewsTop" name="热点新闻置顶" model="新闻管理"/>
+    <perm code="hotNewsPush" name="热点新闻发布" model="新闻管理"/>
+    
+    
+    <perm code="tissueMienManager" name="组织风采管理" model="新闻管理"/>
+    <perm code="tissueMienSearch" name="组织风采查询" model="新闻管理"/>
+    <perm code="tissueMienView" name="组织风采详情" model="新闻管理"/>
+    <perm code="tissueMienAdd" name="组织风采新增" model="新闻管理"/>
+    <perm code="tissueMienEdit" name="组织风采修改" model="新闻管理"/>
+    <perm code="tissueMienDel" name="组织风采删除" model="新闻管理"/>
+    <perm code="tissueMienOut" name="组织风采下架" model="新闻管理"/>
+    <perm code="tissueMienTop" name="组织风采置顶" model="新闻管理"/>
+    <perm code="tissueMienPush" name="组织风采发布" model="新闻管理"/>
+    <perm code="tissueMienRecommend" name="组织风采推荐" model="新闻管理"/>
+</permissions>

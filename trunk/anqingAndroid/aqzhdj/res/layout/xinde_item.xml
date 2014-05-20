@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 背景图片 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whitebg" >
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/new_mine_logo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="5dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/touxiang"
+            android:text="张三"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/touxiang"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="123"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/laizi"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="来自:Android客户端"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/touxiang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

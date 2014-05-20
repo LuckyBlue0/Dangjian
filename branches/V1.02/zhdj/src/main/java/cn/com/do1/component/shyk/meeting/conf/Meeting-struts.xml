@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+        <package name="shyk.meeting" namespace="/meeting" extends="dqdp-default">
+        <action name="meetingAction" class="cn.com.do1.component.shyk.meeting.ui.MeetingAction">
+            <result name="list"/>
+            <result name="edit"/>
+        </action>
+        <action name="dangkeAction" class="cn.com.do1.component.shyk.meeting.ui.DangkeAction">
+            <result name="list"/>
+            <result name="edit"/>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <com.do1.zhdj.activity.infomation.widght.TryRefreshableView
+        android:id="@+id/trymyRV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/headLayout"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/imageLay"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/index_default" >
+
+            <com.do1.zhdj.activity.infomation.widght.MyGallery
+                android:id="@+id/mygallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:spacing="30dp"
+                android:unselectedAlpha="1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/new_infomation_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/iconLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/imgDesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iconLayout"
+                    android:singleLine="true"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.do1.zhdj.activity.infomation.widght.TryPullToRefreshScrollView
+            android:id="@+id/trymySv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/itemLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </com.do1.zhdj.activity.infomation.widght.TryPullToRefreshScrollView>
+    </com.do1.zhdj.activity.infomation.widght.TryRefreshableView>
+
+</RelativeLayout>

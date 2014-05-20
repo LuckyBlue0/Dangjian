@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+    <sql id="SQL_TEST">
+        <![CDATA[
+            select * from abc where
+            a=:a
+            #IF 'VY3xkH5fWHo='==['name2']
+            and b=:b
+            #ELSE
+            and c=:c
+            #ENDIF
+            #IF null!=['name2']
+            and b1='@{T(cn.com.do1.common.util.reflation.BeanHelper).getOracleFieldName(['name2'])}'
+            #ELSE
+            and c1=:c1
+            #ENDIF
+            order by xxx
+                ]]>
+    </sql>
+    <sql id="SQL_TEST1">
+        <![CDATA[
+            select * from abc where
+            a=:a
+            @{_getTableName()} @{_getPKColumnName()}
+            order by xxx
+                ]]>
+    </sql>
+</sqls>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <perm code="leaderManage" name="领导管理" model="基础管理"/>
+    <perm code="leaderAdd" name="领导新增" model="基础管理"/>
+    <perm code="leaderEdit" name="领导修改" model="基础管理"/>
+    <perm code="leaderDel" name="领导删除" model="基础管理"/>
+</permissions>

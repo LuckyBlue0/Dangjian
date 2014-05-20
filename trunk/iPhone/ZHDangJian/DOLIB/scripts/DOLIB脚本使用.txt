@@ -1,0 +1,11 @@
+1.打开终端到DOLIBmodule.py当前文件夹
+
+2.输入命令：
+python DOLIBmodule.py -p /Users/kllmctrl/Desktop/MyProject/MyProject.xcodeproj DO --xcode-version=4
+
+
+
+
+注意：
+已生成的工程路径：/Users/kllmctrl/Desktop/MyProject/MyProject.xcodeproj
+依赖总工程：DO

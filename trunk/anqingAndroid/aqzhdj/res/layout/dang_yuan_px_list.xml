@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    
+    android:background="@drawable/body_bg">
+    
+<!--      <include  -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         layout="@layout/head"/> -->
+     
+<!--          <RelativeLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="center_vertical" -->
+<!--         android:background="@drawable/branch_search_bg" -->
+<!--         android:gravity="center_vertical" -->
+<!--         android:padding="8dp" > -->
+
+<!--         <EditText -->
+<!--             android:id="@+id/keyword" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:singleLine="true" -->
+<!--             android:background="@drawable/branch_search" -->
+<!--             android:hint="输入标题，发起人" -->
+<!--             android:paddingLeft="15dp" -->
+<!--             android:paddingRight="30dp" -->
+<!--             android:textColor="#4c4c4c" -->
+<!--             android:textSize="15sp" /> -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/searchbtn" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:background="@drawable/branch_search_btn" /> -->
+<!--     </RelativeLayout> -->
+     
+<!--      <ListView  -->
+<!--          android:id="@+id/dangyuanPXlist" -->
+<!--          android:layout_width="fill_parent" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          style="@style/list_view_style"/> -->
+     
+<!--      <TextView android:id="@+id/nodata" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:gravity="center" -->
+<!--         android:textSize="18sp" -->
+<!--         android:visibility="gone" -->
+<!--         android:text="暂无数据!"/> -->
+    
+
+</LinearLayout>

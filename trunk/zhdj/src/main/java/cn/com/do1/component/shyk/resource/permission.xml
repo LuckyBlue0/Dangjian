@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <!-- 党课 -->
+    <perm code="partyLectureManager" name="党课管理" model="党课管理"/>
+    <perm code="partyLectureSearch" name="党课查询" model="党课管理"/>
+    <perm code="partyLectureView" name="党课详情" model="党课管理"/>
+    <perm code="partyLectureAdd" name="党课新增" model="党课管理"/>
+    <perm code="partyLectureEdit" name="党课修改" model="党课管理"/>
+    <perm code="partyLectureDel" name="党课删除" model="党课管理"/>
+    <!-- <perm code="partyLectureRecommended" name="推荐" model="党课管理"/> -->
+    <perm code="partyLectureRecord" name="党课记录编辑" model="党课管理"/>
+    <perm code="partyLecturePush" name="党课发布" model="党课管理"/>
+    <perm code="partyLectureOut" name="党课下架" model="党课管理"/>
+    <perm code="partyLectureConclusion" name="党课总结" model="党课管理"/>
+    
+    
+    <!-- 党会 -->
+    <perm code="meetingManager" name="会议管理" model="会议管理"/>
+    <perm code="meetingSearch" name="会议查询" model="会议管理"/>
+    <perm code="meetingView" name="会议详情" model="会议管理"/>
+    <perm code="meetingAdd" name="会议新增" model="会议管理"/>
+    <perm code="meetingEdit" name="会议修改" model="会议管理"/>
+    <perm code="meetingDel" name="会议删除" model="会议管理"/>
+    <!-- <perm code="meetingRecommended" name="会议推荐" model="会议管理"/> -->
+    <perm code="meetingRecord" name="会议记录编辑" model="会议管理"/>
+    <perm code="meetingPush" name="会议发布" model="会议管理"/>
+    <perm code="meetingOut" name="会议下架" model="会议管理"/>
+    <perm code="meetingConclusion" name="会议总结" model="会议管理"/>
+    
+</permissions>

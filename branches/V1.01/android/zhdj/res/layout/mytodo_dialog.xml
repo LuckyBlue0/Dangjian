@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_banner"
+            android:gravity="center"
+            android:text="我要报名"
+            android:textColor="#fffefe"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_mid" >
+
+            <TextView
+                android:id="@+id/dialog_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="是否确认要报名?"
+                android:textColor="#4c4c4c"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/dialog_middle"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/mytodo_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mytodo_confirm"
+                    android:gravity="center"
+                    android:text="确定报名"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/mytodo_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_mytodo_cancel"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/dialog_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relMiddle"
+            android:background="@drawable/dialog_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="share.sharemanager" namespace="/sharemanager" extends="dqdp-default">
+        <action name="sharemanagerAction" class="cn.com.do1.component.share.sharemanager.ui.SharemanagerAction">
+            <result name="edit"/>
+            <result name="list"/>
+        </action>
+    </package>
+     <package name="share.sharemanager.interface" namespace="/interface/share" extends="dqdp-default">
+        <action name="shareAction" class="cn.com.do1.component.share.sharemanager.client.SharemanagerInterfaceAction">
+        </action>
+    </package>
+</struts>

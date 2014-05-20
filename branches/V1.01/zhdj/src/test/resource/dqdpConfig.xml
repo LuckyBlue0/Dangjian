@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dpdq-config platformId="">
+    <commpants>
+        <commpant name="demo" enabled="true" lastVer="">
+
+        </commpant>
+        <commpant name="systemmgr" enabled="true" lastVer="">
+
+        </commpant>
+        <commpant name="dqdploger" enabled="true" lastVer=""/>
+        <commpant name="schedule" enabled="true" lastVer=""/>
+        <commpant name="dqdpmemcache" enabled="true" lastVer=""/>
+        <!--<commpant name="dqdpehcache" enabled="true" lastVer=""/>-->
+        <commpant name="dqdpdictionary" enabled="true" lastVer=""/>
+        <!--<commpant name="dqdpjms" enabled="true" lastVer=""/>-->
+        <!--<commpant name="dqdpjmsserver" enabled="true" lastVer=""/>-->
+        <!--<commpant name="dqdplockserver" enabled="true" lastVer=""/>-->
+        <!--<commpant name="gmcc" enabled="true" lastVer=""/>-->
+        <commpant name="demoremote" enabled="true" lastVer="">
+            <remote type="client" serverUrl="http://192.168.1.19"/>
+        </commpant>
+    </commpants>
+</dpdq-config>
